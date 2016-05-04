@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Action Telephone Exchange is a 24 hour answering service based in Rochester, NY.">
+<meta name="keywords" content="Call Center, Answering Service, Rochester, New York, NY, Voice Mail, Order Entry, Telephone"><!-- Meta data taken from previous action telephone site -->
+    <meta name="author" content="Daniel MacLachlan">
+
+    <title>Action Telephone</title>
+
+<!-- Bootstrap and jquery hardlinks -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- End reference block -->
+
+    <!-- Bootstrap elements override Footer overwrite -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body id="offwhite">
+<!-- Bootstrap Nav Block with size responsive menu -->
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Action Telephone</button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="costs.html">Cost Comparison</a></li>
+        <li><a href="demo.html">Call Demos</a></li>
+        <li class="active"><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container"> <!-- Begin Container Division Element -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Action Telephone</h4>
+        </div>
+        <div class="modal-body">
+           <!-- test -->
+ <div id="contact-form" class="clearfix">
+    <h1>Contact Us</h1>
+    <h2>Tell us a little about yourself and we will get back to you as quickly as possible</h2>
+    <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:</li>
+    </ul>
+    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+    <form method="post" action="MAILTO:mackdan33@gmail.com">
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" value="" placeholder="John Doe" required autofocus />
+         
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required />
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+         
+        <label for="enquiry">Enquiry: </label>
+        <select id="enquiry" name="enquiry">
+            <option value="meical">Medical</option>
+            <option value="commerical">Commercial</option>
+            <option value="personal">Personal</option>
+        </select>
+         
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"></textarea>
+         
+        <span id="loading"></span>
+        <input type="submit" value="Submit" id="submit-button" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+</div>
+  </div>
+        </div>
+      </div>
+      </div>
+     <!-- End modal content -->
+     
+<!-- Begin header block -->
+  <div class="page-header">
+    <h1>Frequently Asked Questions</h1>      
+  </div>
+  <p >You have questions.</p>      
+  <p >We have answers.</p> 
+<!-- End header Block -->
+
+  <h2 >F.A.Q.</h2>
+  
+  <!-- Comment to seperate each FAQ Menu Item -->
+  <div class="panel-group panel panel-default box-shadow--2dp" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">How are you able to dispatch to us?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body"> We have the capability to alpha page to a pager, digitally page you to call us for the message, fax messages to you, e-mail you or multiple people with you messages. Text message your cell phone, call your home, call your cell phone, or call your office.</div>
+      </div>
+    </div>
+  </div>
+<!-- End item -->
+
+  <!-- Comment to seperate each FAQ Menu Item -->
+  <div class="panel-group panel panel-default box-shadow--2dp" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a style="display:block;" data-toggle="collapse" href="#collapse2">Can we get a copy of all messages that come into the service?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"> Yes. We have the capability to either fax you over a daily report with your messages or e-mail them to you or multiple people in your office.</div>
+      </div>
+    </div>
+  </div>
+<!-- End item -->
+
+  <!-- Comment to seperate each FAQ Menu Item -->
+  <div class="panel-group panel panel-default box-shadow--2dp" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse3">Can we see your establishment?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"> Action Telephone Exchange welcomes our customers and invites them to visit our service. We would like at least one hour notice.</div>
+      </div>
+    </div>
+  </div>
+<!-- End item -->
+
+  <!-- Comment to seperate each FAQ Menu Item -->
+  <div class="panel-group panel panel-default box-shadow--2dp" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse4">How does your system work?</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body"> When we setup an account, our customer is required to fill out an Account Setup Sheet. After completing our detailed questionnaire about your company, it is then put into the hands of one of our managers at the service. They input all of you information into our computer system so that your account is setup the way you want it.</div>
+      </div>
+    </div>
+  </div>
+<!-- End item -->
+
+  <!-- Comment to seperate each FAQ Menu Item -->
+  <div class="panel-group panel panel-default box-shadow--2dp" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse5">How long is your “Hold time & Ring Time”?</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body"> Our average hold time at the service runs approximately 15-20 seconds for off peek hours. During peek hours, our hold time averages approximately 30 seconds. Our average ring time 2-3 rings.</div>
+      </div>
+    </div>
+  </div>
+<!-- End item -->
+
+  <!-- Comment to seperate each FAQ Menu Item -->
+  <div class="panel-group panel panel-default box-shadow--2dp" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse6"> How do you staff for emergencies?</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body"> Weather conditions and seasonal changes are carefully calculated and watched for proper staffing. We have supervisors on call 24 hours a day in case extra help needs to be called in. Managers have remote work stations at their residence enabling them to be able to work from home if the need arises.</div>
+      </div>
+    </div>
+  </div>
+<!-- End item -->
+
+
+
+
+
+
+
+
+</div> <!-- End Container Division Element -->
+<!-- Sticky Footer Block -->
+<footer class ="footer">
+ <p class="text-muted">Call us today: (866) 230-3920 E-Mail us: <a href="mailto:support@actiontelephone.com">support@actiontelephone.com</a> &copy Copyright 2013 Action Telephone Exchange. All rights reserved.</p>
+ <p>Images made available by Gratisography.com</p>
+</footer>
+<!-- End footer block -->
+</body>
+
+
+<!-- Site coded by Daniel MacLachlan on 4/24/16 -->
+</html>

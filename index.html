@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Action Telephone Exchange is a 24 hour answering service based in Rochester, NY.">
+<meta name="keywords" content="Call Center, Answering Service, Rochester, New York, NY, Voice Mail, Order Entry, Telephone"><!-- Meta data taken from previous action telephone site -->
+    <meta name="author" content="Daniel MacLachlan">
+
+    <title>Action Telephone</title>
+
+<!-- Bootstrap and jquery hardlinks -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- End reference block -->
+
+    <!-- Bootstrap elements override Footer overwrite -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+ 
+ 
+</head>
+
+<body id="offwhite">
+<!-- Bootstrap Nav Block with size responsive menu -->
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Contact Action Telephone</button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="costs.html">Cost Comparison</a></li>
+        <li><a href="demo.html">Call Demos</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container"> <!-- Begin Container Division Element -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Action Telephone</h4>
+        </div>
+        <div class="modal-body">
+           <!-- test -->
+ <div id="contact-form" class="clearfix">
+    <h1>Contact Us</h1>
+    <h2>Tell us a little about yourself and we will get back to you as quickly as possible</h2>
+    <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:</li>
+    </ul>
+    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+    <form method="post" action="MAILTO:mackdan33@gmail.com">
+        <label for="name">Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" value="" placeholder="John Doe" required autofocus />
+         
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required />
+         
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+         
+        <label for="enquiry">Enquiry: </label>
+        <select id="enquiry" name="enquiry">
+            <option value="meical">Medical</option>
+            <option value="commerical">Commercial</option>
+            <option value="personal">Personal</option>
+        </select>
+         
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required data-minlength="20"></textarea>
+         
+        <span id="loading"></span>
+        <input type="submit" value="Submit" id="submit-button" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+</div>
+  </div>
+        </div>
+      </div>
+      </div>
+     <!-- End modal content -->
+ 
+ <!-- Header block with Jumbotron -->    
+<div class="jumbotron panel panel-default box-shadow--2dp">
+  <h1>Action Telephone</h1>      
+  <p>Hello and welcome to Action Telephone Exchange. We have  over two decades of experience in the message management business. Our answering service is the the perfect solution for busy life styles and small offices. We're here twenty four hours a day, seven days a week. We have emergency backups in the event of anything from a power failure to a building emergency<br />
+  <strong>-In short, we're always open..</strong></p>
+</div>
+<!-- End header block -->
+     
+     
+
+  <!-- Begin Review Carousel Block -->
+  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="../images/carousel1.jpg" alt="Review" />
+        <div class="carousel-caption">
+          <h3>“Action offers excellent customer [service] at all levels.  I have not had any complaints about the answering service since I brought in Action.  Outstanding in every way – thank you!”</h3>
+          <p> –Karen Crotinger, Administrator @ Strong Memorial Hospital</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../images/carousel2.jpg" alt="Review" />
+        <div class="carousel-caption">
+          <h3>“Action Telephone is dedicated to meeting the needs of their customers.  They value customer service and are always willing to assist in any way!  I truly enjoy working with Action Telephone!”</h3>
+          <p> –Tina Faugh, Administrator @ Strong Memorial Hospital</p>
+        </div>
+      </div>
+      
+      <div class="item">
+        <img src="../images/carousel3.jpg" alt="Review" />
+        <div class="carousel-caption">
+          <h3>“Action Telephone has proven to be an important partner in meeting the needs of our customers.  Any business or individual in need of an answering service should look no further than Action Telephone.”</h3>
+          <p>  –Mike Fantanza, Roly-Door, Inc.</p>
+        </div>
+      </div>
+  
+        <div class="item">
+        <img src="../images/carousel4.jpg" alt="Review" />
+        <div class="carousel-caption">
+          <h3>“Action Telephone is a great and reliable answering service for my pediatric practice.  The staff and supervisors are very attentive and know each of their customers' accounts.  They always go above and beyond to ensure professional and responsive relations with the account customers and their clients who call in.  Their followup to customer issues is very dedicated and much appreciated!”</h3>
+          <p> –Lesley Z. Glowinsky MD</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!-- End Review Carousel Block -->
+
+  
+
+
+
+
+</div> <!-- End Container Division Element -->
+<!-- Sticky Footer Block -->
+<footer class ="footer">
+ <p class="text-muted">Call us today: (866) 230-3920 E-Mail us: <a href="mailto:support@actiontelephone.com">support@actiontelephone.com</a> &copy Copyright 2013 Action Telephone Exchange. All rights reserved.</p>
+ <p>Images made available by Gratisography.com</p>
+</footer>
+<!-- End footer block -->
+</body>
+
+
+<!-- Site coded by Daniel MacLachlan on 4/24/16 -->
+</html>
