@@ -235,10 +235,15 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 
 #offwhite{
-	background:url('../images/background1.png');
+	background:url('http://cs5.clasnet.sunyocc.edu/~d.j.maclachlan/cis230/images/background1.png');
 	}
 #largeglyph{
 	font-size:2.5em
 	}
+
+#listfix{
+
+    list-style-type: none;
+}
 
  </style>
