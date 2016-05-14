@@ -5,6 +5,7 @@
   body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  
 }
 th{
 	padding: 10px;
@@ -16,7 +17,7 @@ td{
 .footer {
   position: fixed;
   z-index: 999;
-  opacity: 100%;
+  opacity: 100;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -234,7 +235,7 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 
 #offwhite{
-	background-color:#F7F7F7
+	background:url('../images/background1.png');
 	}
 #largeglyph{
 	font-size:2.5em
