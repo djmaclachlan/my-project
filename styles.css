@@ -244,5 +244,5 @@ input.placeholder-text, textarea.placeholder-text  {
 #listfix{
 
     list-style-type: none;
-    margin: 60px;
+    padding: 60px;
 }
