@@ -8,8 +8,7 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.minusOne = function(index) {
         $scope.products[index].dislikes += 1;
     };
-    $scope.myInterval = 3000;
-    $scope.slides = [
+    $scope.products = [
         {
             name: 'The Book of Trees',
             price: 19,
