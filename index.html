@@ -9,36 +9,18 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 </head>
 <body ng-app="myApp">
-<div class="header">
-    <div class="container">
-        <h1>Book End</h1>
-    </div>
-</div>
-
-<div class="main"  data-ng-controller="MainController">
-    <div class="container">
-
-        <h1>{{ title }}</h1>
-        <h2>{{ promo }}</h2>
-
-            <div ng-controller="MainController" id="slides_control">
-                <div>
-                    <carousel interval="myInterval">
-                        <slide ng-repeat="slide in slides" active="slide.active">
-                            <img ng-src="{{slide.image}}">
-                            <div class="carousel-caption">
-                                <h4>Slide {{$index+1}}</h4>
-                            </div>
-                        </slide>
-                    </carousel>
+<div ng-controller="MainController" id="slides_control">
+    <div>
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}">
+                <div class="carousel-caption">
+                    <h4>Slide {{$index+1}}</h4>
                 </div>
-            </div>
-        </div>
-
-
+            </slide>
+        </carousel>
     </div>
 </div>
-
 
 <!-- Modules -->
 <script src="app.js"></script>
