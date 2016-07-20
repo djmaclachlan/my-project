@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
-    $scope.title = 'Dan\'s Music App';
-    $scope.promo = 'First App Attempt';
+    $scope.title = 'This Month\'s Bestsellers';
+    $scope.promo = 'The most popular books this month.';
     $scope.products = [
         {
             name: 'The Book of Trees',
@@ -42,4 +42,3 @@ app.controller('MainController', ['$scope', function($scope) {
         $scope.products[index].dislikes += 1;
     };
 }]);
-
