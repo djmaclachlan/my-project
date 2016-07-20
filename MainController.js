@@ -4,7 +4,8 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.products = [
         {
             title: 'First Product',
-            subtitle: 'test'
+            subtitle: 'test',
+            cover: 'test.jpg'
 
         }
     ];
