@@ -7,6 +7,11 @@ app.controller('MainController', ['$scope', function($scope) {
             subtitle: 'test',
             cover: 'test.jpg'
 
+        },
+        {
+            title: 'Second Product',
+            subtitle: 'CEREAL',
+            cover: 'test.jpg'
         }
     ];
     $scope.plusOne = function(index) {
