@@ -1,7 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
     $scope.title = 'Dan\'s Music App';
     $scope.promo = 'First App Attempt';
-    $scope.song = 'RDLSuP0-se0';
     $scope.products = [
         {
             name: 'The Book of Trees',
