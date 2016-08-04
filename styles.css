@@ -251,5 +251,5 @@ input.placeholder-text, textarea.placeholder-text  {
 
 }
 #rightalign{
-    text-align: right;
+    align: right;
 }
