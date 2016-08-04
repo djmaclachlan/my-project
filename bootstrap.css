@@ -6801,7 +6801,7 @@ h1 {
     padding-top:10px;
     padding-bottom:15px;
     border:1px solid #80aa00;
-    background:#d6ec94;
+    background: darkslategray;
 }
 [class*="col-"]:before {
     display:block;position:relative;
@@ -6825,7 +6825,7 @@ h1 {
 }
 
 /* content styles enforcing row centering*/
-.item {
+# item {
     display:table;
 }
 .content {
