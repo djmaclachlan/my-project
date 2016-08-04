@@ -250,10 +250,3 @@ input.placeholder-text, textarea.placeholder-text  {
     padding:60px;
 
 }
-#rightalign{
-    float: right;
-}
-#secondarynav{
-   
-    display: inline-block;
-}
