@@ -250,3 +250,6 @@ input.placeholder-text, textarea.placeholder-text  {
     padding:60px;
 
 }
+#rightalign{
+    text-align: right;
+}
