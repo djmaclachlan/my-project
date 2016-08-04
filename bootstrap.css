@@ -6755,3 +6755,9 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* Begin custom rule set */
+
+/*This will be used to insert images via PHP */
+.foo { vertical-align: top; list-style-image: url(.foo.png...); }
+.star { vertical-align: top; list-style-image: url(..star.png..); }
