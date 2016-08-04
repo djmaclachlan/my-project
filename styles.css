@@ -252,9 +252,8 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 #rightalign{
     float: right;
-    display: inline-block;
 }
 #secondarynav{
-    float: center;
+   
     display: inline-block;
 }
