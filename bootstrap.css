@@ -6801,7 +6801,7 @@ h1 {
     padding-top:10px;
     padding-bottom:15px;
     border:1px solid #80aa00;
-    background: darkslategray;
+    background:#d6ec94;
 }
 [class*="col-"]:before {
     display:block;position:relative;
