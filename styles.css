@@ -253,3 +253,6 @@ input.placeholder-text, textarea.placeholder-text  {
 #rightalign{
     align: right;
 }
+#secondarynav{
+    align:center;
+}
