@@ -18,7 +18,7 @@ html, body {
 }
 
 .main {
-    background-color: #aee45d ;
+    background: linear-gradient(to bottom right, #444d6a,#2e354a);
     padding: 40px 0;
 }
 
@@ -33,7 +33,7 @@ html, body {
 }
 
 .main h2 {
-    background: linear-gradient(to bottom right, #444d6a,#2e354a); ;
+    background-color: #99FF00 ;
     color: #999999 ;
     font-size: 20px;
     margin: 0 0 40px 0;
