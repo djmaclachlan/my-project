@@ -32,9 +32,9 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
 
-                            <li><a href="web.html">Web Projects</a></li>
+                            <li class="active"><a href="web.html">Web Projects</a></li>
                             <li><a href="cpp.html">C++ Code examples</a></li>
                             <li><a href="jscripts.html">Javascript Examples</a></li>
                         </ul>
@@ -42,8 +42,26 @@
                 </div>
             </nav>
             <!-- End Navigation Block -->
+            <h1>{{ title }}</h1>
+            <h2>{{ promo }}</h2>
 
-</div><!-- End container div -->
+            <div ng-repeat="project in projects" class="col-md-6">
+
+                <div class="thumbnail">
+                    <a href="{{project.link}}"><img ng-src="{{ project.cover }}"></a>
+                    <p class="title">{{ project.title }}</p>
+                    <p class="subtitle">{{ project.subtitle }}</p>
+                    <div class="rating">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <p>Portfolio site </p>
+        </div>
+    </div><!-- End container div -->
 </div><!-- End app controller div -->
 
 
