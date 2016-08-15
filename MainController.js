@@ -4,14 +4,15 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.projects = [
         {
             title: 'Action Telephone',
-            subtitle: 'Completed Project',
-            cover: 'carousel2.jpg'
-
+            subtitle: 'Complete',
+            cover: 'carousel2.jpg',
+            link: 'actiontelephone.com'
         },
         {
             title: 'Second Product',
-            subtitle: 'CEREAL',
-            cover: 'test.jpg'
+            subtitle: 'Ongoing',
+            cover: 'test.jpg',
+            link: 'warrlock608.github.io/my-project'
         }
     ];
     $scope.plusOne = function(index) {
