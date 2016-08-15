@@ -6,13 +6,13 @@ app.controller('MainController', ['$scope', function($scope) {
             title: 'Action Telephone',
             subtitle: 'Complete',
             cover: 'carousel2.jpg',
-            link: 'actiontelephone.com'
+            link: 'http://www.actiontelephone.com'
         },
         {
             title: 'Second Product',
             subtitle: 'Ongoing',
             cover: 'test.jpg',
-            link: 'warrlock608.github.io/my-project'
+            link: 'http://warrlock608.github.io/my-project'
         }
     ];
     $scope.plusOne = function(index) {
