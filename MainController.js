@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
-    $scope.title = 'Dan\'s first app';
-    $scope.promo = 'Carousel audio app';
+    $scope.title = 'Dan\'s web portfolio';
+    $scope.promo = 'Dan\'s first app';
     $scope.products = [
         {
             title: 'First Product',
