@@ -30,27 +30,14 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#index">Portfolio</a></li>
+                        <li class="active"><a href="#/">Portfolio</a></li>
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#education">Credentials</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <h1>{{ title }}</h1>
-        <h2>{{ promo }}</h2>
-
-        <div ng-repeat="project in projects" class="col-md-6">
-
-            <div class="thumbnail">
-                <a href="{{project.link}}"><img ng-src="{{ project.cover }}"></a>
-                <p class="title">{{ project.title }}</p>
-                <p class="subtitle">{{ project.subtitle }}</p>
-                <div class="rating">
-                </div>
-            </div>
-        </div>
-
+        <div class="ng-view"></div>
 
     </div>
 </div>
