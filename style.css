@@ -19,7 +19,7 @@ html, body {
 }
 
 .main {
-    background: linear-gradient(to bottom, #101010,#101E51);
+    background-image: url("appbg.jpg");
     padding: 40px 0;
 }
 
