@@ -17,7 +17,7 @@ app.controller('MainController', ['$scope', function($scope) {
         {
             title: 'Third Project',
             subtitle: 'Ongoing',
-            cover: 'carousel3',
+            cover: 'carousel3.jpg',
             link: 'http://www.google.com'
         }
     ];
