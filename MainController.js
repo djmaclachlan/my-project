@@ -3,9 +3,9 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.promo = 'Dan\'s first app';
     $scope.projects = [
         {
-            title: 'First Product',
-            subtitle: 'test',
-            cover: 'test.jpg'
+            title: 'Action Telephone',
+            subtitle: 'Completed Project',
+            cover: 'carousel2.jpg'
 
         },
         {
