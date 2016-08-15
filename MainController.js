@@ -9,10 +9,16 @@ app.controller('MainController', ['$scope', function($scope) {
             link: 'http://www.actiontelephone.com'
         },
         {
-            title: 'Second Product',
+            title: 'Second Project',
             subtitle: 'Ongoing',
             cover: 'test.jpg',
             link: 'http://warrlock608.github.io/my-project'
+        },
+        {
+            title: 'Third Project',
+            subtitle: 'Ongoing',
+            cover: 'carousel4',
+            link: 'http://www.google.com'
         }
     ];
     $scope.plusOne = function(index) {
