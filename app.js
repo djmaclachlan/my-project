@@ -4,8 +4,9 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
-        .when("/red", {
-            templateUrl : "red.htm"
+        .when('/', {
+            templateUrl : "home.html",
+            controller  : "MainController"
         })
         .when("/green", {
             templateUrl : "green.htm"
@@ -18,7 +19,8 @@ app.config(function($routeProvider) {
             controller  :  "MainController"
         });
 });
-app.controller('MainController', ['$scope', function($scope) {
+var controllers = {};
+controllers.testController = function($scope){
     $scope.title = 'Dan\'s web portfolio';
     $scope.promo = 'Here are a list of some of my web projects';
     $scope.projects = [
@@ -41,4 +43,6 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.minusOne = function(index) {
         $scope.products[index].dislikes += 1;
     };
-}]);
+}
+
+demo.controller(controllers)
