@@ -21,6 +21,7 @@ html, body {
 .main {
     background-image: url("appbg.jpg");
     padding: 40px 0;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
