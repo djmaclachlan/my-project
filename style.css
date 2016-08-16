@@ -19,7 +19,7 @@ html, body {
 }
 
 .main {
-background: linear-gradient(#ffffff, whitesmoke);
+background: linear-gradient(to bottom right, #056353, #14CCAC);
 }
 
 .main h1 {
