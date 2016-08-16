@@ -76,6 +76,7 @@ html, body {
     height: auto;
 }
 .profile img {
+    position: absolute;
     margin-top: 10px;
     margin-bottom: 30px;
     display: block;
