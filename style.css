@@ -19,11 +19,7 @@ html, body {
 }
 
 .main {
-    background-image: url("appbg.jpg");
-    padding: 40px 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+background: linear-gradient(#ffffff, whitesmoke);
 }
 
 .main h1 {
@@ -104,7 +100,7 @@ height: auto;
 
 .subtitle {
     background-color: #BA0000 ;
-    color: #fff;
+    color: black;
     font-size: 18px;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
