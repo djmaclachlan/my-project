@@ -44,9 +44,20 @@
             <div class="row">
             <div class="col-sm-4">
                 <h1>{{ myName | uppercase }}</h1>
-                <h2>{{ myDob | date}}</h2>
+                <h3>Born: {{ myDob | date}}</h3>
                 <img src = "{{ myImage }}" alt="Profile Image">
 
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    Primary Languages: {{ myPrimaryLanguages  }}
+                </h3>
+                <h4>
+                    Secondary Languages: {{ mySecondaryLanguages }}
+                </h4>
+                <p>
+                    {{ myBio }}
+                </p>
             </div>
 
             </div><!-- End row Div -->
