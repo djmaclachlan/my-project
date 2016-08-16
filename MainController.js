@@ -26,6 +26,6 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.myBio = 'Hello, my name is Dan MacLachlan, and welcome to my web portfolio. Within the contents of this page you will find past projects, current projects, and a few things that I hope to begin this year. My specialty is responsive design in a mobile environment and all work I do is mobile first. Over the course of the next year I intend to become very familiar with some of the more interactive javascript extensions such as Angular and Node.';
     $scope.myPrimaryLanguages = 'HTML5, CSS3, Bootstrap, Angularjs, PHP, and MySQL';
     $scope.mySecondaryLanguages = 'C++, C#, Microsoft Batch Script';
-    $scope.myImage = 'me.jpg';
+    $scope.myImage = 'me.jpeg';
 
 }]);
