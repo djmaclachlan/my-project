@@ -51,22 +51,25 @@ html, body {
 .ng-view .whitewrapper{
     background-color: rgba(245, 245, 245, 0.6);
     padding: 3%;
+    word-spacing: 1.8px;
+    letter-spacing: 1.3px;
+    line-height: 35px;
 }
 .ng-view .bio {
-    color: #BA0000 ;
+    color: #7E3517 ;
     font-size:1.5em;
     text-align:center;
     font-family: 'Denk One', sans-serif;
 }
 .ng-view .intro{
-    color: #BA0000;
+    color: #7E3517;
     text-align: center;
     font-size: 4.0em;
     padding: 40px;
     font-family: 'Denk One', sans-serif;
 }
 .ng-view .subintro{
-    color: #BA0000;
+    color: #7E3517;
     text-align: center;
     font-size: 1.5em;
     font-family: 'Denk One', sans-serif;
