@@ -49,10 +49,10 @@ html, body {
     text-align: center;
 }
 .ng-view .bio {
-    color: #00B233 ;
+    color: #BA0000 ;
     font-size:1.5em;
     text-align:center;
-
+    font-family: 'Denk One', sans-serif;
 }
 .ng-view .intro{
     color: #BA0000;
@@ -62,9 +62,10 @@ html, body {
     font-family: 'Denk One', sans-serif;
 }
 .ng-view .subintro{
-    color: #00FF48;
+    color: #BA0000;
     text-align: center;
     font-size: 1.5em;
+    font-family: 'Denk One', sans-serif;
 }
 .ng-view .description
 {
