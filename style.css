@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     width:100%;
-    background: linear-gradient(to bottom right, #056353, #14CCAC);
+
 }
 
 .header {
@@ -17,11 +17,9 @@ html, body {
 .header h1 {
     display: inline-block;
 }
-
-.ng-view {
-
+.ng-view{
+    background: linear-gradient(to bottom right, #056353, #14CCAC);
 }
-
 .ng-view h1 {
     color: whitesmoke ;
 
