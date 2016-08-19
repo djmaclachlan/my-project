@@ -1,13 +1,13 @@
+
+<div class="whitewrapper">
 <div class="container">
     <div class="intro">{{ title }}</div>
     <div class="description">{{ promo }}</div>
 
     <div ng-repeat="project in projects" class="col-md-4">
 
-        <div class="thumbnail1">
-            <a href="{{project.link}}">{{project.title}}</a>
-            </div>
-        </div>
-    </div>
+            <a href="{{project.link}}"><div class="thumbnail1">{{project.title}}</div></a>
 
-</div><!-- end container div -->
+    </div>
+</div>
+</div><!-- end whitewrapper div -->
