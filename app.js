@@ -30,7 +30,7 @@ app.controller('MainController', function($scope) {
     $scope.projects = [
         {
             title: 'Action Telephone',
-            subtitle: 'Complete',
+            subtitle: 'Ongoing',
             cover: 'carousel2.jpg',
             link: 'http://www.actiontelephone.com'
         },
