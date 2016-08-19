@@ -206,19 +206,3 @@ img{
     margin-left:-200px;
 }
 
-/* First animation*/
-.main .view.ng-enter{
-    left: -100%;
-}
-
-.main .view.ng-enter.ng-enter-active{
-    left: 0%;
-}
-
-.main .view.ng-leave{
-    left: 0%;
-}
-
-.main .view.ng-leave.ng-leave-active{
-    left: 100%;
-}
