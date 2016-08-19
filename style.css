@@ -49,9 +49,7 @@ html, body {
     text-align: center;
 }
 .ng-view .whitewrapper{
-    background-color: whitesmoke;
-    padding:10px;
-    opacity: .6;
+    background-color: rgba(245, 245, 245, 0.6);
 }
 .ng-view .bio {
     color: #BA0000 ;
