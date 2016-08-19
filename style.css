@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     width:100%;
-    background-image: appbg.jpg;
+    background-image: url("appbg.jpg");
 
 }
 
