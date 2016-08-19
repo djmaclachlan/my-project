@@ -51,6 +51,7 @@ html, body {
 .ng-view .whitewrapper{
     background-color: whitesmoke;
     padding:10px;
+    opacity: .9;
 }
 .ng-view .bio {
     color: #BA0000 ;
