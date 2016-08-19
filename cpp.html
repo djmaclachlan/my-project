@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="intro">{{ title }}</div>
+    <div class="description">{{ promo }}</div>
+
+    <div ng-repeat="project in projects" class="col-md-4">
+
+        <div class="thumbnail1">
+            <a href="{{project.link}}">{{project.title}}</a>
+            </div>
+        </div>
+    </div>
+
+</div><!-- end container div -->

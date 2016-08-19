@@ -13,20 +13,20 @@ app.config(function($routeProvider) {
         .when('/web', {
             templateUrl : 'web.html',
             controller  : 'MainController',
-            css : 'style.css'
         })
 
-        .when('/about', {
-            templateUrl : 'pages/about.html',
-            controller  : 'AboutController',
-            css : 'style.css'
+        .when('/cpp', {
+            templateUrl : 'cpp.html',
+            controller  : 'CPPController',
         })
 
         .otherwise({redirectTo: '/'});
 });
+
+/*primary controller */
 app.controller('MainController', function($scope) {
     $scope.title = 'Dan\'s web portfolio';
-    $scope.promo = 'Here are a list of some of my web projects';
+    $scope.promo = 'Here is a list of some of my web projects';
     $scope.projects = [
         {
             title: 'Action Telephone',
@@ -52,4 +52,25 @@ app.controller('MainController', function($scope) {
     $scope.myPrimaryLanguages = 'HTML5, CSS3, Bootstrap, Javascript, Angularjs, PHP, and MySQL';
     $scope.mySecondaryLanguages = 'C++, C#, Microsoft Batch Script';
     $scope.myImage = 'me.jpeg';
+});
+
+
+/*Secondary Controller */
+app.controller('CPPController', function($scope) {
+    $scope.title = 'Dan\'s web portfolio';
+    $scope.promo = 'Here is a list of some of my C++ projects';
+    $scope.projects = [
+        {
+            title: 'Calculates Area of a Rectangle',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6WGhNby0xdEhidUU/view?usp=sharing'
+        },
+        {
+            title: 'Calculates the Average of Three Numbers',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6VFFvajM3NjNob1U/view?usp=sharing'
+        },
+        {
+            title: 'Converts Farenheit Into Celcius',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6VEhGMXNhalg4WEU/view?usp=sharing'
+        }
+    ];
 });
