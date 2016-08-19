@@ -5,8 +5,8 @@ html, body {
     width:100%;
     background-image: url("appbg.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
-    background-color: whitesmoke;
+    background-position: center top;
+    background-color: darkgray;
 
 
 }
