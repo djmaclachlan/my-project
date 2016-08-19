@@ -88,5 +88,9 @@ app.controller('CPPController', function($scope) {
             title: 'Splits a Float Number Into A Whole Number and Fraction',
             link: 'https://drive.google.com/file/d/0B8uAm7zc58m6SHZqTHFLRzdLMGs/view?usp=sharing'
         },
+        {
+            title: 'Calculates Total Cost of a Purchase Order',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6blF6Rzdhenp1T28/view?usp=sharing'
+        }
     ];
 });
