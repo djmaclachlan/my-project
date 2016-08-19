@@ -23,3 +23,6 @@ app.config(function($routeProvider) {
 
         .otherwise({redirectTo: '/'});
 });
+app.controller('TestController', function($scope) {
+    $scope.message = 'Hello from TestController';
+});
