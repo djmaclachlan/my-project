@@ -71,6 +71,22 @@ app.controller('CPPController', function($scope) {
         {
             title: 'Converts Farenheit Into Celcius',
             link: 'https://drive.google.com/file/d/0B8uAm7zc58m6VEhGMXNhalg4WEU/view?usp=sharing'
-        }
+        },
+        {
+            title: 'Calculates the Cost of Car Rental',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6ZFBGRkRYaEs5SFk/view?usp=sharing'
+        },
+        {
+            title: 'Calculates the Average of a Gradebook',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6bVJsMXVkUXc2V0E/view?usp=sharing'
+        },
+        {
+            title: 'Calculates the Distance Between Two Points',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6cE9nMEJYSDZ6ckU/view?usp=sharing'
+        },
+        {
+            title: 'Splits a Float Number Into A Whole Number and Fraction',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6SHZqTHFLRzdLMGs/view?usp=sharing'
+        },
     ];
 });
