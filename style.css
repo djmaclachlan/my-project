@@ -18,8 +18,8 @@ html, body {
     display: inline-block;
 }
 
-.main {
-background: linear-gradient(to bottom right, #056353, #14CCAC);
+.ng-view {
+    background: linear-gradient(to bottom right, #056353, #14CCAC);
 }
 
 .main h1 {
@@ -70,9 +70,9 @@ background: linear-gradient(to bottom right, #056353, #14CCAC);
     margin-bottom: 30px;
     display: block;
     max-width:230px;
-max-height:230px;
-width: auto;
-height: auto;
+    max-height:230px;
+    width: auto;
+    height: auto;
 }
 .profile {
     margin-top: 10px;
