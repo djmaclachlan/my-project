@@ -36,19 +36,18 @@ app.controller('MainController', function($scope) {
         },
         {
             title: 'Second Project',
-            subtitle: 'Ongoing',
-            cover: 'test.jpg',
+            subtitle: 'TBA',
+            cover: 'placeholder.png',
             link: 'http://warrlock608.github.io/my-project'
         },
         {
             title: 'Third Project',
-            subtitle: 'Ongoing',
-            cover: 'carousel3.jpg',
-            link: 'http://www.google.com'
+            subtitle: 'TBA',
+            cover: 'placeholder.png',
+            link: 'http://warrlock608.github.io/my-project'
         }
     ];
     $scope.myName = 'Daniel J. MacLachlan';
-    $scope.myDob = '01/08/1988';
     $scope.myBio = 'Hello, my name is Dan MacLachlan, and welcome to my web portfolio. Within the contents of this page you will find past projects, current projects, and a few things that I hope to begin this year. My specialty is responsive design in a mobile environment and all work I do is mobile first. Over the course of the next year I intend to become very familiar with some of the more interactive javascript extensions such as Angular and Node.';
     $scope.myPrimaryLanguages = 'HTML5, CSS3, Bootstrap, Javascript, Angularjs, PHP, and MySQL';
     $scope.mySecondaryLanguages = 'C++, C#, Microsoft Batch Script';
