@@ -56,27 +56,27 @@ html, body {
     line-height: 35px;
 }
 .ng-view .bio {
-    color: #7E3517 ;
+    color: #2f3846;
     font-size:1.5em;
     text-align:center;
     font-family: 'Denk One', sans-serif;
 }
 .ng-view .intro{
-    color: #7E3517;
+    color: #2f3846;
     text-align: center;
     font-size: 4.0em;
     padding: 40px;
     font-family: 'Denk One', sans-serif;
 }
 .ng-view .subintro{
-    color: #7E3517;
+    color: #2f3846;
     text-align: center;
     font-size: 1.5em;
     font-family: 'Denk One', sans-serif;
     margin-bottom:10px;
 }
 .ng-view .subintro1{
-    color: #7E3517;
+    color: #2f3846;
     text-align: center;
     font-size: 1.5em;
     font-family: 'Denk One', sans-serif;
