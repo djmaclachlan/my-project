@@ -1,7 +1,7 @@
 /**
  * Created by NowWithLessVirus! on 7/19/16.
  */
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 app.config(function($routeProvider) {
     $routeProvider
 
