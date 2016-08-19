@@ -118,7 +118,12 @@ html, body {
     height:50px;
     display:block;
     border-radius: 25px;
-    border: 2px solid #73AD21;
+    border: 2px solid #2f3846;
+    text-align: center;
+    text-decoration: none;
+    color:#2f3846;
+    font-family: 'Denk One', sans-serif;
+    font-size: 1em;
 }
 
 .profile {
