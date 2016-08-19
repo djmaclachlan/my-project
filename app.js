@@ -89,6 +89,10 @@ app.controller('CPPController', function($scope) {
             link: 'https://drive.google.com/file/d/0B8uAm7zc58m6SHZqTHFLRzdLMGs/view?usp=sharing'
         },
         {
+            title: 'Rounds a Float Number to a Designated Decimal Place',
+            link: 'https://drive.google.com/file/d/0B8uAm7zc58m6cEdSSnZuT2h3TUk/view?usp=sharing'
+        },
+        {
             title: 'Calculates Total Cost of a Purchase Order',
             link: 'https://drive.google.com/file/d/0B8uAm7zc58m6blF6Rzdhenp1T28/view?usp=sharing'
         }
