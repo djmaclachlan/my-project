@@ -28,4 +28,5 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.mySecondaryLanguages = 'C++, C#, Microsoft Batch Script';
     $scope.myImage = 'me.jpeg';
 
+    $scope.test = 'ROUTE TEST SUCCESSFUL!'; //TEMP VARIABLE TO TEST NG.ROUTE
 }]);
