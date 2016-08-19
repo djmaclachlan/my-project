@@ -7,8 +7,7 @@ app.config(function($routeProvider) {
 
         .when('/', {
             templateUrl : 'main.html',
-            controller  : 'MainController',
-            css: { href: 'style.css', preload: true }
+            controller  : 'MainController'
         })
 
         .when('/web', {
