@@ -49,17 +49,20 @@ html, body {
     text-align: center;
 }
 .ng-view .bio {
-    background-color: whitesmoke ;
-    color: #999999 ;
-    font-size: 15px;
-    margin: 0 0 40px 0;
-    padding: 20px 0;
-    text-align: left;
+    color: #00B233 ;
+    font-size:2.5em;
+    text-align:center;
+    
 }
 .ng-view .intro{
     color: #BA0000;
     text-align: center;
     font-size: 4.0em;
+}
+.ng-view .subintro{
+    color: #00FF48;
+    text-align: center;
+    font-size: 2.5em;
 }
 
 .thumbnail {
