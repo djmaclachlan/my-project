@@ -52,17 +52,20 @@ html, body {
     color: #00B233 ;
     font-size:1em;
     text-align:center;
+    padding: 40px;
 
 }
 .ng-view .intro{
     color: #BA0000;
     text-align: center;
     font-size: 4.0em;
+    padding: 40px;
 }
 .ng-view .subintro{
     color: #00FF48;
     text-align: center;
     font-size: 1em;
+    padding: 40px;
 }
 
 .thumbnail {
