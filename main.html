@@ -1,0 +1,25 @@
+
+    <div class="container">
+
+        <!-- End Navigation Block -->
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>{{ myName | uppercase }}</h2>
+                <h3>Born: {{ myDob | date}}</h3>
+                <img class="profile" ng-src="{{ myImage }}" alt="Profile Image">
+
+            </div>
+            <div class="col-sm-8">
+                <h3>
+                    Primary Languages: {{ myPrimaryLanguages  }}
+                </h3>
+                <h3>
+                    Secondary Languages: {{ mySecondaryLanguages }}
+                </h3>
+                <p class="bio">
+                    {{ myBio }}
+                </p>
+            </div>
+
+        </div><!-- End row Div -->
+    </div><!-- End container div -->

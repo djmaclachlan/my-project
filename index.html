@@ -17,51 +17,37 @@
 <div class="container">
 </div>
 <div class="main" data-ng-controller="MainController">
-        <!-- Side Nav Block -->
-        <div class="container">
-            <nav class="navbar navbar-light" style="background-color: whitesmoke;">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">Daniel J. MacLachlan</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-
-                            <li><a href="web.html">Web Projects</a></li>
-                            <li><a href="cpp.html">C++ Code examples</a></li>
-                            <li><a href="jscripts.html">Javascript Examples</a></li>
-                        </ul>
-                    </div>
+    <!-- Side Nav Block -->
+    <div class="container">
+        <nav class="navbar navbar-light" style="background-color: whitesmoke;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Daniel J. MacLachlan</a>
                 </div>
-            </nav>
-            <!-- End Navigation Block -->
-            <div class="row">
-            <div class="col-sm-4">
-                <h2>{{ myName | uppercase }}</h2>
-                <h3>Born: {{ myDob | date}}</h3>
-                <img class="profile" ng-src="{{ myImage }}" alt="Profile Image">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
 
+                        <li><a href="web.html">Web Projects</a></li>
+                        <li><a href="cpp.html">C++ Code examples</a></li>
+                        <li><a href="jscripts.html">Javascript Examples</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-8">
-                <h3>
-                    Primary Languages: {{ myPrimaryLanguages  }}
-                </h3>
-                <h3>
-                    Secondary Languages: {{ mySecondaryLanguages }}
-                </h3>
-                <p class="bio">
-                    {{ myBio }}
-                </p>
+        </nav>
+        <!-- End Navigation Block -->
+        <div id="main">
+            <div ng-view>
+                <!-- this is the division element that will accept other html pages
+                and create a single web app -->
             </div>
-
-            </div><!-- End row Div -->
-</div><!-- End container div -->
+        </div>
+    </div><!-- End container div -->
 </div><!-- End app controller div -->
 
 <!-- Modules -->
