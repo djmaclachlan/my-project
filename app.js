@@ -11,9 +11,9 @@ app.config(function($routeProvider) {
             controller  : 'MainController'
         })
 
-        .when('/blog', {
-            templateUrl : 'pages/blog.html',
-            controller  : 'BlogController'
+        .when('/web', {
+            templateUrl : 'web.html',
+            controller  : 'MainController'
         })
 
         .when('/about', {
