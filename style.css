@@ -57,6 +57,11 @@ html, body {
     padding: 20px 0;
     text-align: left;
 }
+.ng view .intro{
+    color: #BA0000;
+    text-align: center;
+    font-size: 4.0em;
+}
 
 .thumbnail {
     border: 0px;
