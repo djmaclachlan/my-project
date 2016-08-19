@@ -59,6 +59,7 @@ html, body {
     text-align: center;
     font-size: 4.0em;
     padding: 40px;
+    font-family: 'Denk One', sans-serif;
 }
 .ng-view .subintro{
     color: #00FF48;
