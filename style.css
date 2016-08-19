@@ -50,6 +50,7 @@ html, body {
 }
 .ng-view .whitewrapper{
     background-color: rgba(245, 245, 245, 0.6);
+    padding: 3%;
 }
 .ng-view .bio {
     color: #BA0000 ;
