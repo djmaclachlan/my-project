@@ -4,6 +4,10 @@ html, body {
     font-family: 'Roboto', sans-serif;
     width:100%;
     background-image: url("appbg.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: whitesmoke;
+
 
 }
 
