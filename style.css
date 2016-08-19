@@ -48,6 +48,10 @@ html, body {
     padding: 20px 0;
     text-align: center;
 }
+.ng-view .whitewrapper{
+    background-color: whitesmoke;
+    padding:10px;
+}
 .ng-view .bio {
     color: #BA0000 ;
     font-size:1.5em;
@@ -60,7 +64,6 @@ html, body {
     font-size: 4.0em;
     padding: 40px;
     font-family: 'Denk One', sans-serif;
-    background-color: whitesmoke;
 }
 .ng-view .subintro{
     color: #BA0000;
@@ -68,7 +71,6 @@ html, body {
     font-size: 1.5em;
     font-family: 'Denk One', sans-serif;
     margin-bottom:10px;
-    background-color: whitesmoke;
 }
 .ng-view .subintro1{
     color: #BA0000;
