@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
 
         .when('/', {
             templateUrl : 'test.html',
-            controller  : 'MainController'
+            controller  : 'TestController'
         })
 
         .when('/blog', {
