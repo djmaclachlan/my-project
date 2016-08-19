@@ -66,6 +66,13 @@ html, body {
     text-align: center;
     font-size: 1.5em;
     font-family: 'Denk One', sans-serif;
+    margin-bottom:10px;
+}
+.ng-view .subintro1{
+    color: #BA0000;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Denk One', sans-serif;
 }
 .ng-view .description
 {
