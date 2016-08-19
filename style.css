@@ -50,9 +50,8 @@ html, body {
 }
 .ng-view .bio {
     color: #00B233 ;
-    font-size:1em;
+    font-size:1.5em;
     text-align:center;
-    padding: 40px;
 
 }
 .ng-view .intro{
@@ -64,8 +63,14 @@ html, body {
 .ng-view .subintro{
     color: #00FF48;
     text-align: center;
-    font-size: 1em;
-    padding: 40px;
+    font-size: 1.5em;
+}
+.ng-view .description
+{
+    color: #00B233;
+    font-size:2.0em;
+    text-align: center;
+    padding-bottom:40px;
 }
 
 .thumbnail {
