@@ -22,7 +22,7 @@ html, body {
 
 }
 
-.main h1 {
+.ng-view h1 {
     color: whitesmoke ;
 
     font-size: 64px;
@@ -32,7 +32,7 @@ html, body {
     width: 50%;
 }
 
-.main h2 {
+.ngview h2 {
     background-color: whitesmoke ;
     color: #999999 ;
     font-size: 20px;
@@ -40,7 +40,7 @@ html, body {
     padding: 20px 0;
     text-align: center;
 }
-.main h3 {
+.ngview h3 {
     background-color: whitesmoke ;
     color: #999999 ;
     font-size: 15px;
@@ -48,7 +48,7 @@ html, body {
     padding: 20px 0;
     text-align: center;
 }
-.main .bio {
+.ngview .bio {
     background-color: whitesmoke ;
     color: #999999 ;
     font-size: 15px;
