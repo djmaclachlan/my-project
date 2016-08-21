@@ -95,11 +95,10 @@ html, body {
     padding: 50px;
     border-radius: 0;
     margin-bottom:50px;
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-radial-gradient(#ffd89b, #ffd89b, #19547b); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(#ffd89b, #ffd89b, #19547b); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(#ffd89b, #ffd89b, #19547b); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(#ffd89b, #ffd89b, #19547b); /* Standard syntax (must be last) */
+    background: #deefff; /* Old browsers */
+    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #deefff 0%,#98bede 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .thumbnail img {
