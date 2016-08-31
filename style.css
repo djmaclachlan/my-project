@@ -236,3 +236,11 @@ img{
 .navbar .navbar-collapse {
     text-align: center;
 }
+.transparent{
+    background: transparent;
+    border: transparent;
+    background-color: transparent;
+}
+.fullwidth {
+    width:100%
+}
