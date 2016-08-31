@@ -3,9 +3,10 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     width:100%;
-    background-image: url("appbg1.jpg");
-    background-attachment: fixed;
-    background-position: center;
+    background: #deefff; /* Old browsers */
+    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #deefff 0%,#98bede 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
 
 }
@@ -226,4 +227,12 @@ img{
     top:20px;
     margin-left:-200px;
 }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
 
+.navbar .navbar-collapse {
+    text-align: center;
+}
