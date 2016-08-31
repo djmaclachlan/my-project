@@ -262,4 +262,8 @@ img{
 }
 .jumbotron .center {
     text-align: center;
+    font-family: 'Sigmar One', cursive;
+}
+.aboutus{
+    font-family: 'Roboto', sans-serif;
 }
