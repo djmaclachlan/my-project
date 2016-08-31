@@ -10,8 +10,8 @@ app.config(function($routeProvider) {
             controller  : 'MainController'
         })
 
-        .when('/web', {
-            templateUrl : 'web.html',
+        .when('/about', {
+            templateUrl : 'aboutus.html',
             controller  : 'MainController'
         })
 
