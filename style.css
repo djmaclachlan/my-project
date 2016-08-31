@@ -227,20 +227,23 @@ img{
     top:20px;
     margin-left:-200px;
 }
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+}
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
-    background-color: transparent;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
-    background-color: transparent;
 }
 .navbar a{
     font-weight: bold;
-    
+
 }
 .transparent{
     background: transparent;
