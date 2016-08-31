@@ -231,10 +231,16 @@ img{
     display: inline-block;
     float: none;
     vertical-align: top;
+    background-color: transparent;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
+    background-color: transparent;
+}
+.navbar a{
+    font-weight: bold;
+    
 }
 .transparent{
     background: transparent;
@@ -250,4 +256,7 @@ img{
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
     opacity: .7;
+}
+.jumbotron .center {
+    text-align: center;
 }
