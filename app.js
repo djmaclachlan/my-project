@@ -15,9 +15,13 @@ app.config(function($routeProvider) {
             controller  : 'MainController'
         })
 
-        .when('/cpp', {
-            templateUrl : 'cpp.html',
-            controller  : 'CPPController'
+        .when('/broadcast', {
+            templateUrl : 'broadcast.html',
+            controller  : 'MainController'
+        })
+        .when('/am', {
+            templateUrl : 'am.html',
+            controller  : 'MainController'
         })
 
         .otherwise({redirectTo: '/'});
