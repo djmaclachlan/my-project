@@ -27,7 +27,10 @@ app.config(function($routeProvider) {
             templateUrl : 'antennas.html',
             controller  : 'MainController'
         })
-
+        .when('/fm', {
+            templateUrl : 'fm.html',
+            controller  : 'MainController'
+        })
         .otherwise({redirectTo: '/'});
 });
 
