@@ -279,3 +279,6 @@ img{
 .centerimage{
     text-align: center;
 }
+.margincorrect{
+    margin: 25px;
+}
