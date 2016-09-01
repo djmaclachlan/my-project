@@ -270,3 +270,9 @@ img{
     line-height: 140%;
     padding: 15px;
 }
+.container .center{
+    align-content: center;
+}
+.pointer {
+    cursor:pointer;
+}
