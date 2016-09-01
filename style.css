@@ -279,6 +279,6 @@ img{
 .centerimage{
     text-align: center;
 }
-.margincorrect{
-    margin: 10px;
+.paddingcorrect{
+    padding: 10px;
 }
