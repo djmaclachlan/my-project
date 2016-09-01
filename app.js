@@ -23,6 +23,10 @@ app.config(function($routeProvider) {
             templateUrl : 'am.html',
             controller  : 'MainController'
         })
+        .when('/antennas', {
+            templateUrl : 'antennas.html',
+            controller  : 'MainController'
+        })
 
         .otherwise({redirectTo: '/'});
 });
