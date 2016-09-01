@@ -31,6 +31,10 @@ app.config(function($routeProvider) {
             templateUrl : 'fm.html',
             controller  : 'MainController'
         })
+        .when('/digital', {
+            templateUrl : 'digital.html',
+            controller  : 'MainController'
+        })
         .otherwise({redirectTo: '/'});
 });
 
