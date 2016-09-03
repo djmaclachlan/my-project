@@ -10,36 +10,21 @@ app.config(function($routeProvider) {
             controller  : 'MainController'
         })
 
-        .when('/about', {
-            templateUrl : 'aboutus.html',
-            controller  : 'MainController'
-        })
-
-        .when('/broadcast', {
-            templateUrl : 'broadcast.html',
-            controller  : 'MainController'
-        })
-        .when('/am', {
-            templateUrl : 'am.html',
-            controller  : 'MainController'
-        })
-        .when('/antennas', {
-            templateUrl : 'antennas.html',
-            controller  : 'MainController'
-        })
-        .when('/fm', {
-            templateUrl : 'fm.html',
-            controller  : 'MainController'
-        })
-        .when('/digital', {
-            templateUrl : 'digital.html',
-            controller  : 'MainController'
-        })
         .otherwise({redirectTo: '/'});
 });
 
 /*primary controller */
 app.controller('MainController', function($scope) {
+
+    $scope.mixes = [
+        {mix:'<iframe width="560" height="315" src="https://www.youtube.com/embed/ZUpUD2JJe0U" frameborder="0" allowfullscreen></iframe>'},
+        {mix:'<iframe width="560" height="315" src="https://www.youtube.com/embed/C0vksDKSaRE" frameborder="0" allowfullscreen></iframe>'},
+        {mix:'<iframe width="560" height="315" src="https://www.youtube.com/embed/DlkO768mDfQ" frameborder="0" allowfullscreen></iframe>'},
+        {mix:'<iframe width="560" height="315" src="https://www.youtube.com/embed/zspxB1AUTjs" frameborder="0" allowfullscreen></iframe>'},
+        {mix:'<iframe width="560" height="315" src="https://www.youtube.com/embed/RDLSuP0-se0" frameborder="0" allowfullscreen></iframe>'}
+         ];
+
+
 
 
 });

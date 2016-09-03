@@ -7,7 +7,7 @@
     <meta name="description" content="A Web Portfolio created in the AngularJS extension">
     <meta name="keywords" content="Daniel, MacLachlan, Web, Design, Syracuse, Ny"><!-- Meta data taken from previous action telephone site -->
     <meta name="author" content="Daniel MacLachlan">
-    <title>Armstrong Transmitter Corporation</title>
+    <title>Mixes by Colin Baker</title>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
@@ -23,72 +23,22 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
     <script src="app.js"></script>
+    <link href="css/navbar-fixed-side.css" rel="stylesheet" />
 </head>
 <body>
-<div class="container">
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/">Armstrong Transmitter</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#/">Home</a></li>
-                    <li><a href="#/about">About Us</a></li>
-                    <li><a href="#/contact">Contact</a></li>
-                </ul>
-            </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-lg-2">
+            <nav class="navbar navbar-default navbar-fixed-side">
+                <!-- normal collapsible navbar markup -->
+            </nav>
         </div>
-    </nav>
-
-    <div class="jumbotron">
-        <h1 class="center">Armstrong Transmitter Corporation</h1>
+        <div class="col-sm-9 col-lg-10">
+            <div class="ng-view"></div> <!-- all content inserted into ng-view -->
+        </div>
     </div>
-
-
-    <!-- second nav menu -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#noaa">NOAA Weather Radio</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle pointer" data-toggle="dropdown">Broadcast Products
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#/am">AM Transmitter</a></li>
-                            <li><a href="#/antennas">Antennas</a></li>
-                            <li><a href="#/digital">Digital FM</a></li>
-                            <li><a href="#/fm">FM Transmitters</a></li>
-                            <li><a href="#/exciters">Exciters</a></li>
-                            <li><a href="#/passive">Passive RF</a></li>
-                            <li><a href="#/stl">STL Systems</a></li>
-                            <li><a href="#/tv">TV Transmitters</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#/broadcast">Broadcast Products</a></li>
-                    <li><a href="#/custom">Custom RF</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 </div>
 
-<!-- End Navigation Block -->
-<div class="ng-view"></div>
 
 
 </body>
