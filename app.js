@@ -1,7 +1,7 @@
 /**
  * Created by NowWithLessVirus! on 7/19/16.
  */
-var app = angular.module('myApp', ['ngRoute']);
+var app = angular.module('myApp', ['ngRoute', 'ngYoutubeEmbed']);
 app.config(function($routeProvider) {
     $routeProvider
 
@@ -16,13 +16,10 @@ app.config(function($routeProvider) {
 /*primary controller */
 app.controller('MainController', function($scope) {
 
-    $scope.mixes = [
-        {mix:'ZUpUD2JJe0U'},
-        {mix:'C0vksDKSaRE'},
-        {mix:'DlkO768mDfQ'},
-        {mix:'zspxB1AUTjs'},
-        {mix:'RDLSuP0-se0'}
-         ];
+    $scope.videoForm = {};
+    $scope.link1 = 'https://www.youtube.com/watch?v=OPmOXJtxxoo';
+    $scope.link2 = 'https://www.youtube.com/watch?v=E813VYySueM';
+    $scope.link3 = 'https://www.youtube.com/watch?v=vWzeQtiwk9g';
 
 
 
