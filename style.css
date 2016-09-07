@@ -3,13 +3,14 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     width:100%;
-    background-image: url("appbg.jpg");
-    background-repeat:no-repeat;
-    background-position: center center;
 
 
 }
-
+.ngview{
+    background-image: url("appbg.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+}
 .header {
     padding: 15px;
 }
