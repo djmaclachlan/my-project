@@ -6,7 +6,7 @@ html, body {
 
 
 }
-.ngview{
+.ng-view{
     background-image: url("appbg.jpg");
     background-repeat:no-repeat;
     background-position: center center;
