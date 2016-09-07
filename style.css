@@ -3,10 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     width:100%;
-    background: #deefff; /* Old browsers */
-    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #deefff 0%,#98bede 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #deefff 0%,#98bede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: url("appbg.jpg")
 
 
 }
@@ -227,11 +224,6 @@ img{
     top:20px;
     margin-left:-200px;
 }
-.navbar {
-    background-color: transparent;
-    background: transparent;
-    border-color: transparent;
-}
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -240,45 +232,4 @@ img{
 
 .navbar .navbar-collapse {
     text-align: center;
-}
-.navbar a{
-    font-weight: bold;
-
-}
-.transparent{
-    background: transparent;
-    border: transparent;
-    background-color: transparent;
-}
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(logo.jpg);
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    opacity: .7;
-}
-.jumbotron .center {
-    text-align: center;
-    font-family: 'Sigmar One', cursive;
-}
-.aboutus{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4em;
-    line-height: 140%;
-    padding: 15px;
-}
-.container .center{
-    align-content: center;
-}
-.pointer {
-    cursor:pointer;
-}
-.centerimage{
-    text-align: center;
-}
-.paddingcorrect{
-    padding: 10px;
 }

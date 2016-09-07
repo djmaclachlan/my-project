@@ -1,7 +1,7 @@
 /**
  * Created by NowWithLessVirus! on 7/19/16.
  */
-var app = angular.module('myApp', ['ngYoutubeEmbed']);
+var app = angular.module('myApp', ['ngRoute']);
 app.config(function($routeProvider) {
     $routeProvider
 
@@ -15,8 +15,13 @@ app.config(function($routeProvider) {
 
 /*primary controller */
 app.controller('MainController', function($scope) {
-    $scope.videoForm = {};
-    $scope.link1 = 'https://www.youtube.com/watch?v=OPmOXJtxxoo';
-    $scope.link2 = 'https://www.youtube.com/watch?v=E813VYySueM';
-    $scope.link3 = 'https://www.youtube.com/watch?v=vWzeQtiwk9g';
+
+    $scope.myName = "Daniel MacLachlan";
+    $scope.myPrimaryLanguages = "HTML5, CSS5, PHP, MYSQL, Javascript, AngularJS";
+    $scope.myBio = "Hello, and welcome to my web portfolio! I am an aspiring web developer living in Upstate, NY. Take a look around this site to get an idea of my work and style."
+
+
+
+
+
 });
