@@ -7,10 +7,13 @@ body, html{
     margin-bottom: auto;
     margin-top: auto;
     font-size: 3.0em;
+    line-height: 2.0;
 }
 .silver{
     background-color: #DFE2DB;
     height: 100%;
+    line-height: 2.0;
+    background-color: transparent;
 }
 .appcontainer{
     height: 500px;
