@@ -23,3 +23,6 @@ body, html{
 .clear{
     background-color: transparent;
 }
+centered{
+    text-align: center;
+}
