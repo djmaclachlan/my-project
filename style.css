@@ -23,6 +23,9 @@ body, html{
 .clear{
     background-color: transparent;
 }
-centered{
+.centered{
     text-align: center;
+}
+.name{
+    font-family: 'Pacifico', cursive;
 }
