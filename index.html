@@ -1,43 +1,692 @@
-<!doctype html>
-<html ng-app="myApp">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A Web Portfolio created in the AngularJS extension">
-    <meta name="keywords" content="Daniel, MacLachlan, Web, Design, Syracuse, Ny"><!-- Meta data taken from previous-->
-    <meta name="author" content="Daniel MacLachlan">
-    <title>Daniel MacLachlan's Web Portfolio</title>
+<!-- content added on 9/8/16 by Daniel MacLachlan (Bootstrap links)-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- End -->
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Mobi2Pdf - Free Mobi to PDF Converter</title>
+<meta name="description" content="Online converter for Mobi to PDF and PDF to Mobi. Fast and free! Also converts PCR to PDF and AZW to PDF. Optimized PDFs and many conversion options." />
+<meta name="keywords" content="mobi to pdf, pdf to mobi, online converter, e-book, ebook converter, mobi converter, free online conversion, kindle, ebook software" />
+<meta http-equiv="Language" content="en" />
+<meta name="language" content="en" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://www.mobi-to-pdf.com/" />
+<script async language="JavaScript" type="text/javascript">
+    var show_bar = 0;
+    var alreadyLoaded=false;
+    function setOnSubmitEvent(){
 
-    <!-- CSS & Font files -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
-    <script src="app.js"></script>
+        if (alreadyLoaded==false)
+            downloadJSAtOnload();
+
+//show iframe on form submit
+        $("#form1").submit(function(){
+            if (show_bar === 1) {
+                $('#progress-frame').show();
+                function set () {
+                    $('#progress-frame').attr('src','progress-frame.php?up_id=57d1ba578e3ae');
+                }
+                setTimeout(set);
+            }
+        });
+    }
+
+
+    // Add a script element as a child of the body
+    function downloadJSAtOnload() {
+
+        var element = document.createElement("script");
+        element.src = "https://www.djvu-pdf.com/jquery.min.js";
+        document.body.appendChild(element);
+        alreadyLoaded=true;
+        setOnSubmitEvent();
+    }
+
+    // Check for browser support of event handling capability
+    if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+    var exts = ".mobi|.prc|.pdf|.azw|.azw3";
+
+    function StartUpload(f1)
+    {
+        if(f1.file_1.value==""){alert('Select at least one file to upload');return false;};
+        if(!checkExt(f1.file_1.value))return false;
+        var UID = Math.round(10000*Math.random())+'0'+Math.round(10000*Math.random());
+        f1.action = f1.action.split('?')[0]+'?upload_id='+UID;
+        if(f1.popup.checked)
+        {
+            win1 = window.open(f1.action.split('upload.cgi')[0]+'upload_status.cgi?upload_id='+UID,'win1','width=320,height=240,resizable=1');
+            win1.window.focus();
+        }
+        return true;
+    }
+
+    function checkExt(value)
+    {
+        if(value=="")return true;
+        var re = new RegExp("^.+\.("+exts+")$","i");
+        if(!re.test(value))
+        {
+            alert("This file extension is not allowed: \n" + value + "\n\nOnly these extensions are allowed: "+exts.replace(/\|/g,',')+" \n\n");
+            return false;
+        }
+        return true;
+    }
+    function hideInfo()
+    {
+        document.getElementById("message").style.visibility = "hidden";
+    }
+    function showInfo()
+    {
+        document.getElementById("message").style.visibility = "visible";
+    }
+    function hideEnergyInfo()
+    {
+        document.getElementById("energy-info").style.visibility = "hidden";
+    }
+
+    function showEnergyInfo()
+    {
+        document.getElementById("energy-info").style.visibility = "visible";
+    }
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30508450-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style type="text/css">
+
+/*iframe*/
+
+#upload_frame {
+    border:0px;
+    height:40px;
+    width:290px;
+    display:none;
+}
+#progress_container {
+    width: 290px;
+    height: 15px;
+    border: 1px solid #CCCCCC;
+    background-color:#EBEBEB;
+    display: block;
+    margin:5px 0px -15px 0px;
+}
+
+#progress_bar {
+    position: relative;
+    height: 15px;
+    background-color: #abe5f0;
+    width: 0%;
+    z-index:10;
+}
+
+#progress_completed {
+    font-size:16px;
+    z-index:40;
+    line-height:15px;
+    padding-left:4px;
+    color:#000000;
+}
+body,td,a,p,.h{font-family:arial,sans-serif}
+body {
+    padding: 0px;
+    text-align: center;
+    overflow: auto;
+}
+body,td,a,p,.h{font-family:arial,sans-serif}
+hr {	height: 1px;
+    background-color: #000;
+    color: #000;
+    border: none;
+}
+#response {
+    width: 500px;
+    height: 20px;
+    backgorund: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#fff));
+    background: -moz-linear-gradient(top, #f1f1f1, #fff);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin: 0 0 20px 0;
+    display: none;
+}
+#response div {
+    height: 100%;
+    width: 0;
+    border: none;
+    background: #84D700;
+    -moz-box-shadow: 2px 0 5px #ccc;
+    -webkit-box-shadow: 2px 0 5px #ccc;
+    box-shadow: 2px 0 5px #ccc;
+}
+#loader {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    display: none;
+}
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline; color: red;}
+
+/*		Default Layout: 992px.   */
+div#main {
+    width: 980px;
+    margin: 0px auto;
+    text-align: left;
+    overflow:hidden;
+    font-size:16px;
+}
+
+.container {
+    float: left;
+    width: 100%;
+}
+
+.columnCenter{
+    width: 980px;
+    float:left;
+}
+
+
+.columnLeft{
+    width: calc(50% - 490px);
+    float:left;
+}
+.columnRight{
+    width: calc(50% - 490px);
+    float:left;
+}
+
+.addvert_center
+{
+    text-align: center;
+}
+
+.header {
+    overflow: hidden;
+}
+.first_header_content{padding-left:0;}
+.header_content {
+    float: left;
+}
+.arrow_section{width: 300px; position: relative; top: -25px;}
+.big_text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.pad_top{
+    padding-left: 44px;
+    padding-right: 25px;
+    padding-top: 35px;
+}
+.gach {
+    padding-top: 15px;
+}
+.header_content.big_text > h1 {
+    font-size: 34px;
+}
+.header_content.big_text  b {
+    font-size: 14px;  top: -10px; position: relative;
+}
+.menu > ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu li {
+    float: left;
+    margin-right: 10px;
+    font-size:20px;
+}
+.menu li:after{
+    content:" |"
+}
+.menu li:last-child:after{
+    content:""
+}
+
+.menu_bottom > ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu_bottom li {
+    float: left;
+    margin-right: 10px;
+    font-size:16px;
+}
+.menu_bottom li:after{
+    content:" |"
+}
+.menu_bottom li:last-child:after{
+    content:""
+}
+
+
+
+
+
+.upload_section{background-color: rgb(255, 255, 255); width: 980px;}
+.upload_section tr{float:left;}
+.addvert{visibility:visible;}
+.main_up {
+    overflow: hidden;
+}
+.main_up_single {
+    float: left;
+    text-align: left;
+    width: 310px;
+}
+
+.energy_info{visibility:hidden;border: 3px #abe5f0 solid; position: absolute; top: 10px; left: 50%;   padding: 15px; z-index:11; background-color: #FFFFFF; width: 800px;  text-align: left;}
+.message{visibility:hidden; border: 3px #abe5f0 solid; position: absolute; top: 10px; left:50%;  z-index:11; background-color: #FFFFFF; width: 760px; text-align: left; padding: 15px;}
+/*		Tablet Layout: 768px.  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    div#main {
+        width: 750px;
+        text-align: center;
+    }
+    .arrow_section{width: 300px; position: relative; top: -25px;}
+
+    .columnCenter{
+        width: 100%;
+        float:left;
+    }
+
+
+    .addvert_center
+    {
+        text-align: left;
+    }
+
+    .text_all {
+        text-align: justify;
+        width: 730px;
+        font-family: "Open Sans", sans-serif;
+    }
+    .first_header_content{padding-left: 113px;}
+    .big_text {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .pad_top{
+        padding-left: 44px;
+        padding-right: 25px;
+        padding-top: 35px;
+    }
+    .gach {
+        padding-top: 15px;
+    }
+    .addvert{visibility:hidden;display: none;}
+    .energy_info{ left: 0%;  width: 749px; }
+    .message{left:0%; width: 700px;}
+}
+/*		Mobile Layout: 320px.   */
+@media only screen and (max-width: 767px) {
+    div#main {
+        width: 300px;
+        text-align: center;
+    }
+    .text_all {
+        text-align: justify;
+        width: 289px;
+    }
+    .do_not_show {
+        display: none;
+    }
+
+    .columnCenter{
+        width: 100%;
+        float:left;
+    }
+
+    .addvert_center
+    {
+        text-align: left;
+    }
+
+    .arrow_section{width: 300px; position: relative; top: -25px;}
+    .first_header_content{padding-left:88px;}
+    .big_text {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .pad_top{
+        padding-left: 44px;
+        padding-right: 25px;
+        padding-top: 5px;
+    }
+    .gach {
+        padding-top: 15px;
+        padding-left: 100px;
+    }
+    .addvert{visibility:hidden;display: none;}
+    .main_up_single {
+        float: none;
+        width: 284px;
+        text-align: left;
+    }
+    .energy_info{ left: 0%;  width: 284px; }
+    .message{left:0%; width: 250px;}
+
+}
+/*		Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    div#main {
+        width: 460px;
+        text-align: center;
+    }
+
+    .columnCenter{
+        width: 100%;
+        float:left;
+    }
+
+    .text_all {
+        text-align: justify;
+        width: 447px;
+    }
+    .arrow_section{padding-left: 2px;
+        position: relative;
+        top: -25px;
+        width: 428px;}
+    .main_up_single {
+        float: none;
+        text-align: left;
+        width: 436px;
+    }
+    .first_header_content{padding-left: 152px;}
+    .big_text {
+        padding-left: 50px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .pad_top{
+        padding-left: 44px;
+        padding-right: 25px;
+        padding-top: 35px;
+    }
+    .gach {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .addvert{visibility:hidden;display: none;}
+    .energy_info{ left: 0%;  width: 444px; }
+    .message{left:0%; width: 400px;}
+}
+</style>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4559838995070559",
+        enable_page_level_ads: true
+    });
+</script>
+
 </head>
 <body>
-<div class="appcontainer">
-<div class="row">
-    <div class="col-sm-4 dark">
-        <ul>
-            <li><a href="#/">Home</a></li>
-            <li><a href="#web">Web Projects</a></li>
-            <li><a href="#cpp">C++ Projects</a></li>
-        </ul>
+<div class="container">
+    <div class="columnLeft do_not_show">
+        &nbsp;
     </div>
-    <div class="col-sm-8 silver">
-    <div class="ng-view"></div> <!-- all content inserted into ng-view -->
+    <div class="columnCenter">
+        <div id="main">
+            <div class="header">
+                <div class="header_content first_header_content">
+                    <img src="mobi-to-pdf-logo.png" class="do_not_show" alt="Mobi To Pdf Logo" align="middle">
+                </div>
+                <div class="header_content big_text">
+                    <h1>
+                        Mobi to PDF converter
+
+                    </h1>
+                    <b>
+                        Fast, Free & Online. BETA version. Also converts PRC to PDF!
+
+                    </b>
+                </div>
+                <div class="header_content pad_top do_not_show">
+                    <!--energy headline-->
+                </div>
+                <div class="header_content gach">
+                </div>
+            </div>
+            <div class="menu">
+                <hr>
+                <ul>
+                    <li><a href="index.php">Main</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="terms.html">Terms of service</a></li>
+                    <li><a href="mobi-format.html">The Mobi Format</a></li>
+                    <li><a href="links.html">Links and More</a></li>
+
+                    <li>
+                        <a href="index.php"><img src="uk.png" border="0"></a> <a href="?language=de"><img src="de.png" border="0"></a>
+                        <a href="?language=es"><img src="es.alt.png" border="0"></a> <a href="fr/"><img src="fr.png" border="0"></a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <table style="width: 960px;">
+                <tbody>
+                <tr colspan="3">
+                    <td style="padding-top:15px;" colspan="3">
+                        <div class="addvert_center">
+                            <!-- mobi-to-pdf-top-center -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:728px;height:90px"
+                                 data-ad-client="ca-pub-4559838995070559"
+                                 data-ad-slot="4830850926"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="main_up">
+                            <div style="padding: 10px" class="addvert main_up_single">
+                                <!-- mobi-to-pdf-entry-page-left -->
+                                <ins class="adsbygoogle"
+                                     style="display:inline-block;width:336px;height:280px"
+                                     data-ad-client="ca-pub-4559838995070559"
+                                     data-ad-slot="1788158245"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                            <div style="padding-left: 20px;" class="main_up_single">
+                                <div class="arrow_section"><h1 style="padding: 5px; font-size: 36px; top: 12px; position: relative;"><b>Mobi</b><img style="top: -8px; position: relative;" src="double_arrow_sign2.png" alt="" align="middle"><b>PDF</b></h1>
+                                    <form style="top: -15px; position: relative;" enctype="multipart/form-data" action="post.php" method="post" name="form1" id="form1">
+                                        <B>Mobi, PRC or PDF filename:</B><BR>
+                                        <!--APC hidden field-->
+                                        <input type="hidden" value="demo" name="PHP_SESSION_UPLOAD_PROGRESS"/>
+                                        <!---->
+                                        <input name="file" onclick="show_bar = 1;setOnSubmitEvent();" onchange="checkExt(this.value)" id="file" type="file">
+                                        <input type="submit" value="Convert!">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</form><div style="position: relative; top: -12px; left: 160px;">
+
+                                    </div>
+                                    <!--Include the iframe-->
+                                    <iframe style="position: relative; top: 0px; height: 40px;" id="progress-frame" name="progress-frame" border="0" src="" scrollbar="no" scrolling="no" frameborder="0"></iframe>
+                                    <!-- Place this tag where you want the +1 button to render. -->
+                                    <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+                                    <!-- Place this tag after the last +1 button tag. -->
+                                    <script type="text/javascript">
+                                        (function() {
+                                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                            po.src = 'https://apis.google.com/js/platform.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
+
+
+                                    Using this service you accept the <a href="terms.html">terms of service</a>.
+
+                                    </b>
+                                </div>
+                            </div>
+                            <div style="padding-left: 10px;" class="main_up_single">
+                                This <B>free online converter</B> for ebooks converts
+                                <ul>
+                                    <li>Mobi to PDF</li>
+
+                                    <li>PDF to Mobi</li>
+
+                                </ul>
+                                <B>Get your result only in three steps:</B>
+                                <ul>
+                                    <li>Press "Browse..." to select a Mobi or PDF file</li>
+
+                                    <li>Click "Convert!" in order to start with the online conversion</li>
+
+                                    <li>Done! - Download the converted file and enjoy...</li>
+
+                                </ul>
+
+                                A converter for Epub files you find here:
+                                <a href="http://www.go4epub.com/"Go4epub.com">Free Epub Converter</a>
+
+                            </div>
+                        </div><table class="upload_section">
+                        <tbody>
+                        <tr>
+                            <td colspan="3" align="center">
+                            </td>
+                        </tr>
+                    </table>
+                        <div class="text_all">
+                            <h2>How to convert from Mobi to PDF</h2>
+                            This online converter is fast and easy to use. With only a few easy steps, you will be able to enjoy the file you need. Here you can see the steps you need to follow in order to convert your ebook from Mobi to PDF:<BR>
+                            1. Upload your Mobi file.<BR>
+                            2. Watch the process bar, as your file is being converted.<BR>
+                            3. Download the converted PDF file.<BR>
+                            It’s as fast and easy as that! You are not required to download and install anything. This converter is free and online, so that you can use it anytime and you will have the desired files converted in less than one minute, without any installation on your system.
+
+                            <h2>Benefits of this online converter</h2>
+                            Here are some of the main benefits of the Mobi to PDF converter:
+                            <ul>
+                                <li>It requires no download</li>
+                                <li>No installation needed</li>
+                                <li>It is free to use</li>
+                            </ul>
+                            It allows you to fast and easy convert any Mobi file to PDF
+                            PDF files can be read on multiple devices and operating systems
+                            Mobi format is also known as a .prc format, thus this converter also allows you to convert .prc files to PDF files
+
+                            <h2>Features of online converter</h2>
+
+                            Our converter is <B>fast and easy</B> to use: Just upload your Mobi file and convert it to PDF <B>with one click</B>. You can watch the conversion in realtime then and download the PDF file when finished. Therefore you do not have to download and install any conversion software at your system. Converting your Mobi ebook files to PDF helps you to read them with a wide range of applications for Windows, Linux and Mac. We respect your privacy, all files will be deleted immediatelly after you downloaded them. Since the Mobi format also is known using the extension <B>.prc</B> you can use this site also to convert <B>PRC to PDF</B>. The main features in overview:
+
+                            <ul>
+                                <li><B>Privacy: </B>It respects your privacy. Right after your file is finished converting and downloading, it is immediately deleted from our software</li>
+                                <li><B>Fast conversion:</B> The conversion from Mobi to PDF takes usually <B>less than a minute</B></li>
+                                <li><B>Easy to use:</B> Everything can be done with only <B>one click</B></li>
+                                <li><B>Online conversion:</B> No software has to be downloaded or installed</li>
+                                <li><B>Free: </B>This service is availble 100% free of charge</li>
+                                <li>The PDF format is supported by a wide range of applications and ebook readers</li>
+                                <li><B>Searchable PDF files:</B> The PDF files you get from your Mobi ebooks are usually searchable</li>
+                                <li><B>PCR to PDF</B>: This converter converts as Mobi as PRC to PDF</li>
+                                <li><B>No registration required</B>: We do not ask you for your email address</li>
+                                <li><B>Preserves internal links</B>: The links in your Mobi document will also work in the PDF file</li>
+
+                            </ul>
+
+                            New! Enjoy the <B>improved performance</B> of our new servers. You can be sure that you will be satisfied by our smart Mobi to PDF converter. The <B>best results in the web</B> with least effort...
+                            <BR><BR>
+
+                            <h2>PDF to Mobi conversion</h2>
+                            This service also offers an basic conversion from PDF to Mobipocket. However, it will not work properly in all cases since many PDF documents are to complex to convert them to Mobi well. Nevertheless. it is worth trying. The result quality can vary from very good to more or less useless.<BR>
+
+                            <h2>AZW to PDF conversion</h2>
+                            Furthermore, we offer a basic AZW to PDF conversion here. However, for the moment only files without DRM protection are supported.
+                        </div>
+                    </td>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <BR><BR>
+            <hr>
+
+            <table width=100%><tr><td>© 2015 www.mobi-to-pdf.com | <a href="mailto:webmaster@mobi-pdf.com">Contact</a> |</td>
+
+        </div>
+        </tr></table>
+    </div>
+    <!--main -->
+
 </div>
+<!--colum-center -->
+<div class="columnRight do_not_show">
+    <!-- djvu-pdf.com-side -->
+    <div style="position: relative; top: 120px;">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- mobi-to-pdf-side -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:600px"
+             data-ad-client="ca-pub-4559838995070559"
+             data-ad-slot="6266348241"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 </div>
+
+
 </div>
+<!--container -->
+
+
+<div id="energy-info" class="energy_info">
+    <!--?php
+    if ($SESSION['lan']=="en")
+    {
+            include 'en/e-info.php';
+
+    } else if ($lan=="de")
+    {
+            include 'de/e-info.php';
+
+    } else if ($lan=="es")
+    {
+            include 'es/e-info.php';
+    } else if ($lan=="cn")
+    {
+            include 'cn/e-info.php';
+    }
+
+
+    ?-->
+</div>
+<BR>&ensp;
 </body>
 </html>
-
-
