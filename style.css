@@ -13,10 +13,12 @@ body, html{
     background-color: #DFE2DB;
     height: 100%;
     line-height: 2.0;
-    background-color: transparent;
 }
 .appcontainer{
     height: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.transparent{
+    background-color: transparent;
 }
