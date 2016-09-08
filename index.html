@@ -440,7 +440,13 @@ div#main {
     .addvert{visibility:hidden;display: none;}
     .energy_info{ left: 0%;  width: 444px; }
     .message{left:0%; width: 400px;}
+
 }
+/* The following styles were added on 9/8/16 by Daniel MacLachlan, used to style left and right column */
+    .leftcol{
+        border-right: 2px gray;
+        min-height: 400px;
+    }
 </style>
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -495,7 +501,8 @@ div#main {
                 </ul>
                 <hr>
             </div>
-
+                            <div class="row"><!-- Bootstrap row div -->
+                            <div class="col-sm-4 leftcol"><!-- Left Col -->
                             <!-- dividing break, for organizing -->
                             <div style="padding-left: 20px;" class="main_up_single">
                                 <div class="arrow_section"><h1 style="padding: 5px; font-size: 36px; top: 12px; position: relative;"><b>Mobi</b><img style="top: -8px; position: relative;" src="double_arrow_sign2.png" alt="" align="middle"><b>PDF</b></h1>
@@ -527,8 +534,10 @@ div#main {
                                     </b>
                                 </div>
                             </div>
+                            </div><!-- col-sm-4 end -->
                             <!-- dividing break, for organizing -->
 
+                            <div class="col-sm-8 rightcol"><!-- right col -->
                             <!-- dividing break, for organizing -->
                             <div style="padding-left: 10px;" class="main_up_single">
                                 This <B>free online converter</B> for ebooks converts
@@ -552,7 +561,7 @@ div#main {
                                 <a href="http://www.go4epub.com/"Go4epub.com">Free Epub Converter</a>
 
                             </div>
-
+                            </div><!-- End col-sm-8 -->
                             <!-- dividing break, used to organize. -->
 
 
@@ -609,18 +618,12 @@ div#main {
                             <h2>AZW to PDF conversion</h2>
                             Furthermore, we offer a basic AZW to PDF conversion here. However, for the moment only files without DRM protection are supported.
                         </div>
-                    </td>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
             <BR><BR>
             <hr>
 
             <table width=100%><tr><td>© 2015 www.mobi-to-pdf.com | <a href="mailto:webmaster@mobi-pdf.com">Contact</a> |</td>
-
+            </tr></table>
         </div>
-        </tr></table>
     </div>
     <!--main -->
 
