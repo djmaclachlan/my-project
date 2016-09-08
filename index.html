@@ -458,6 +458,7 @@ div#main {
     }
     .right_col ul{
         list-style: none;
+        font-size: 1.5em;
     }
     .navbar-correct{
         border: none;
@@ -516,11 +517,13 @@ div#main {
                             <!-- dividing break, for organizing -->
                                         <p class="title">MobiPDF</p>
                                         <p class="subtitle"><B>Mobi, PRC or PDF filename:</B></p>
+                                        <div class="left_align"><!-- Used to align buttons
                                         <!--APC hidden field-->
                                         <input type="hidden" value="demo" name="PHP_SESSION_UPLOAD_PROGRESS"/>
                                         <!---->
                                         <input name="file" onclick="show_bar = 1;setOnSubmitEvent();" onchange="checkExt(this.value)" id="file" type="file">
                                         <input type="submit" value="Convert!">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</form>
+                                        </div>
                                     <!--Include the iframe-->
                                     <iframe style="position: relative; top: 0px; height: 40px;" id="progress-frame" name="progress-frame" border="0" src="" scrollbar="no" scrolling="no" frameborder="0"></iframe>
                                     <!-- Place this tag where you want the +1 button to render. -->
