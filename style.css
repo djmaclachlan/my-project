@@ -9,6 +9,7 @@ body, html{
     font-size: 3.0em;
     line-height: 2.0;
     color:#DFE2DB;
+
 }
 .silver{
     background-color: #DFE2DB;
@@ -30,4 +31,15 @@ body, html{
 .name{
     font-family: 'Pacifico', cursive;
     font-size: 4.0em;
+}
+li a{
+    border-color: #DFE2DB;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover{
+    background-color: #FFF056;
 }
