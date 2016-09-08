@@ -4,6 +4,9 @@ body, html{
 .dark{
     background-color: #191919;
     height:100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 3.0em;
 }
 .silver{
     background-color: #DFE2DB;
