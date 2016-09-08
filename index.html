@@ -459,7 +459,6 @@ div#main {
 
 </head>
 <body>
-<div class="container">
     <div class="columnLeft do_not_show">
         &nbsp;
     </div>
@@ -485,22 +484,28 @@ div#main {
                 <div class="header_content gach">
                 </div>
             </div>
-            <div class="menu">
-                <hr>
-                <ul>
-                    <li><a href="index.php">Main</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="terms.html">Terms of service</a></li>
-                    <li><a href="mobi-format.html">The Mobi Format</a></li>
-                    <li><a href="links.html">Links and More</a></li>
-
-                    <li>
-                        <a href="index.php"><img src="uk.png" border="0"></a> <a href="?language=de"><img src="de.png" border="0"></a>
-                        <a href="?language=es"><img src="es.alt.png" border="0"></a> <a href="fr/"><img src="fr.png" border="0"></a>
-                    </li>
-                </ul>
-                <hr>
-            </div>
+            <nav class="navbar navbar-default navbar-right">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">WebSiteName</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.php">Main</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="terms.html">Terms of service</a></li>
+                            <li><a href="mobi-format.html">The Mobi Format</a></li>
+                            <li><a href="links.html">Links and More</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                            <div class="container"><!-- Body Container -->
                             <div class="row"><!-- Bootstrap row div -->
                             <div class="col-sm-4"><!-- Left Col -->
                             <!-- dividing break, for organizing -->
@@ -531,7 +536,6 @@ div#main {
 
                                     Using this service you accept the <a href="terms.html">terms of service</a>.
 
-                                    </b>
                                 </div>
                             </div>
                             </div><!-- col-sm-4 end -->
