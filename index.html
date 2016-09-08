@@ -453,6 +453,7 @@ div#main {
         border-left: 1px #ccc solid;
         background-color:white;
         border-top: 1px solid #ccc;
+        text-align: left;
     }
     .right_col ul{
         list-style: none;
@@ -463,9 +464,13 @@ div#main {
     }
     .left_col{
         border-top: 1px solid #ccc;
+        text-align: right;
     }
     .title{
         font-size: 3em;
+    }
+    .subtitle{
+        font-size:2em;
     }
 </style>
 
@@ -505,10 +510,8 @@ div#main {
                             <div class="row"><!-- Bootstrap row div -->
                             <div class="col-sm-4 left_col"><!-- Left Col -->
                             <!-- dividing break, for organizing -->
-                            <div style="padding-left: 20px;" class="main_up_single">
-                                <div class="arrow_section"><h1 style="padding: 5px; font-size: 36px; top: 12px; position: relative;"><b>Mobi</b><img style="top: -8px; position: relative;" src="double_arrow_sign2.png" alt="" align="middle"><b>PDF</b></h1>
-                                    <form style="top: -15px; position: relative;" enctype="multipart/form-data" action="post.php" method="post" name="form1" id="form1">
-                                        <B>Mobi, PRC or PDF filename:</B><BR>
+                                        <p class="title">MobiPDF</p>
+                                        <p class="subtitle"><B>Mobi, PRC or PDF filename:</B></p>
                                         <!--APC hidden field-->
                                         <input type="hidden" value="demo" name="PHP_SESSION_UPLOAD_PROGRESS"/>
                                         <!---->
