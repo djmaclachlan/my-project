@@ -32,12 +32,19 @@ body, html{
     font-family: 'Pacifico', cursive;
     font-size: 4.0em;
 }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 li a{
     border-color: #DFE2DB;
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #DFE2DB;
 
 }
 li a:hover{
