@@ -8,10 +8,11 @@ body, html{
     margin-top: auto;
     font-size: 3.0em;
     line-height: 2.0;
+    color:#DFE2DB;
 }
 .silver{
     background-color: #DFE2DB;
-    height: 100%;
+    min-height: 500px;
     line-height: 2.0;
 }
 .appcontainer{
