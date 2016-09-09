@@ -21,6 +21,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="canonical" href="https://www.mobi-to-pdf.com/" />
+
+
+<script language="javascript">//Temp removal of right click
+    document.onmousedown=disableclick;
+    status="Right Click Disabled";
+    function disableclick(event)
+    {
+        if(event.button==2)
+        {
+            alert(status);
+            return false;
+        }
+    }
+</script>
+
+
 <script async language="JavaScript" type="text/javascript">
     var show_bar = 0;
     var alreadyLoaded=false;
@@ -449,9 +465,9 @@ div#main {
         border-left: 1px #ccc solid;
         background-color: transparent;
         text-align: left;
-        font-family: "Open Sans", sans-serif
-        top: 0px;
+        font-family: "Open Sans", sans-serif;
         line-height: 1.6;
+        padding: 15px;
     }
     .right_col ul{
         list-style: none;
@@ -463,7 +479,10 @@ div#main {
     }
     .left_col{
         text-align: center;
-        font-family: "Open Sans", sans-serif
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.6;
+        padding: 15px;
+
     }
     .title{
         font-size: 2em;
@@ -498,7 +517,7 @@ div#main {
 </script>
 
 </head>
-<body>
+<body oncontextmenu="return false">
 <div class="underline">
             <!-- Division break, for organizing -->
             <nav class="navbar navbar-default navbar-right navbar-correct">
