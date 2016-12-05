@@ -1,53 +1,6 @@
-body, html{
-    background-color: #191919;
-}
-.dark{
-    background-color: #191919;
-    height:100%;
-    margin-bottom: auto;
-    margin-top: auto;
-    font-size: 3.0em;
-    line-height: 2.0;
-    color:#DFE2DB;
-
-}
-.silver{
-    background-color: #DFE2DB;
-    min-height: 500px;
-    line-height: 2.0;
-}
-.appcontainer{
-    height: 500px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.clear{
-    background-color: transparent;
-}
-.centered{
-    text-align: center;
-    margin:10px;
-}
-.name{
-    font-family: 'Pacifico', cursive;
-    font-size: 4.0em;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li a{
-    border-color: #DFE2DB;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #DFE2DB;
-
-}
-li a:hover{
-    text-decoration: underline;
-    color: #DFE2DB;
+.left{
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    float:left;
 }
