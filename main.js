@@ -5,8 +5,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 // Write code here:
-var myDiv = <div className="left">This is the start a beautiful project</div>
 ReactDOM.render(
-    myDiv,
+<h1>Hello, world!</h1>,
     document.getElementById('app')
 );
