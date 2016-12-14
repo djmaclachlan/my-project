@@ -1,4 +1,4 @@
-.container{
+html{
     background-image: url(background.jpg);
 }
 .jumbotron{
@@ -7,4 +7,6 @@
 
 .gothic{
     font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.4em;
+    line-height: 1.2em;
 }
