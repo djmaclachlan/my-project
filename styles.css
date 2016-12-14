@@ -9,7 +9,8 @@ body{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 1.9em;
     line-height:150%;
-    background-color: white;
+    background-color: slategray;
+    color:white;
 }
 #gothic1
-{    font-family: 'Didact Gothic', sans-serif;    font-size: 1.4em;    line-height: 150%;    background-color: white;}
+{    font-family: 'Didact Gothic', sans-serif;    font-size: 1.4em;    line-height: 150%;    background-color: slategray; color:white;}
