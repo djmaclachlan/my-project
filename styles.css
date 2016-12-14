@@ -12,4 +12,5 @@ body{
     line-height:150%;
     background-color: slategray;
     color:white;
+    border: black, 2px;
 }
