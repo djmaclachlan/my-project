@@ -5,9 +5,11 @@ body{
     background-image: url(jumbotron.gif);
 }
 
-.gothic{
+#gothic{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 1.4em;
     line-height: 1.2em;
     background-color: white;
 }
+#gothic1
+{    font-family: 'Didact Gothic', sans-serif;    font-size: 1.4em;    line-height: 1.2em;    background-color: white;}
