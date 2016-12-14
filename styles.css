@@ -1,4 +1,4 @@
-html{
+body{
     background-image: url(background.jpg);
 }
 .jumbotron{
@@ -9,4 +9,5 @@ html{
     font-family: 'Didact Gothic', sans-serif;
     font-size: 1.4em;
     line-height: 1.2em;
+    background-color: white;
 }
