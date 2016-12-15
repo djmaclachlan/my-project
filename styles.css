@@ -13,3 +13,13 @@ body{
     color:white;
     border: solid black 2px;
 }
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    font-size: 1.3em;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
