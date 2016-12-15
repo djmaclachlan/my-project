@@ -18,13 +18,14 @@ html, body{
     font-size:1.8em;
 }
 footer {
-    position: absolute;
+    position: static;
     left: 0;
     bottom: 0;
     height: 100px;
     width: 100%;
     background-color: white;
     text-align: center;
+    margin-top
 }
 #myCarousel{
     margin-bottom:100px;
@@ -44,4 +45,8 @@ footer {
 }
 .page-header{
     text-align:center;
+}
+.push{
+    height: 50px;
+    width: 100%;
 }
