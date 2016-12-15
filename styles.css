@@ -5,14 +5,14 @@ html, body{
     display: inline-block;
     float: none;
     vertical-align: top;
-    font-size: 1.3em
+    font-size: 1.3em;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
 }
 .carousel-inner{
-    background-color: black;
+    background-color: white;
 }
 .carousel-inner h3{
     font-size:1.8em;
@@ -21,7 +21,7 @@ html, body{
     text-align: center;
 }
 #myCarousel{
-    margin-bottom:100px
+    margin-bottom:100px;
 }
 .jumbotron{
     background-image: url(jumbotron.gif);
