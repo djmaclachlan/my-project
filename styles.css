@@ -17,16 +17,31 @@ html, body{
 .carousel-inner h3{
     font-size:1.8em;
 }
-.footer{
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
     text-align: center;
+    margin-top: 100px;
 }
 #myCarousel{
     margin-bottom:100px;
 }
-.jumbotron{
+.jumbotron {
     background-image: url(jumbotron.gif);
-    text-align:center;
+    text-align: center;
+    margin-top: 50px;
 }
+
 .carousel-caption{
-    top: -25px;
+    top: 250px;
+}
+.rightcol{
+    border-left: black 5px;
+}
+.page-header{
+    text-align:center;
 }
