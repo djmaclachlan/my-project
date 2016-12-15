@@ -25,6 +25,7 @@ html, body{
 }
 .jumbotron{
     background-image: url(jumbotron.gif);
+    text-align:center;
 }
 .carousel-caption{
     top: -25px;
