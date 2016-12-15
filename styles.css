@@ -1,4 +1,4 @@
-body{
+html, body{
     background-color: black;
 }
 .jumbotron{
@@ -20,4 +20,10 @@ body{
 
 .navbar .navbar-collapse {
     text-align: center;
+}
+.carousel-inner{
+    background-color: black;
+}
+.carousel-inner h3{
+    font-size:1.4em;
 }
