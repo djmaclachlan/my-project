@@ -1,15 +1,10 @@
 html, body{
     background-color: black;
 }
-.jumbotron{
-    background-image: url(jumbotron.gif);
-}
-
-.gothic{
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.4em;
-    line-height: 1.2em;
-    background-color: white;
+.navbar-custom {
+    background-color:#000;
+    color:#ffffff;
+    border-radius:0;
 }
 .navbar .navbar-nav {
     display: inline-block;
@@ -26,4 +21,7 @@ html, body{
 }
 .carousel-inner h3{
     font-size:1.8em;
+}
+#myCarousel{
+
 }
