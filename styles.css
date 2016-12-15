@@ -26,3 +26,6 @@ html, body{
 .jumbotron{
     background-image: url(jumbotron.gif);
 }
+.carousel-caption{
+    top: -25px;
+}
