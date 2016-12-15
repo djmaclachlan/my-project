@@ -1,23 +1,21 @@
 body{
-    background-color: black;
+    background-image: url(background.jpg);
 }
 .jumbotron{
     background-image: url(jumbotron.gif);
 }
 
-.col-sm-6{
+.gothic{
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 1.9em;
-    line-height:150%;
-    background-color: slategray;
-    color:white;
-    border: solid black 2px;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    background-color: white;
 }
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
     vertical-align: top;
-    font-size: 1.3em;
+    font-size: 1.3em
 }
 
 .navbar .navbar-collapse {
