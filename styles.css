@@ -22,6 +22,11 @@ html, body{
 .carousel-inner h3{
     font-size:1.8em;
 }
+.footer{
+    text-align: center;
+    margin-top: 150px;
+}
 #myCarousel{
-
+    position: absolute;
+    top: -20px;
 }
