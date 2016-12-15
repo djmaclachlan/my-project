@@ -1,6 +1,7 @@
 html, body{
     background-color: white;
 }
+a
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -31,7 +32,9 @@ footer {
     margin-bottom:100px;
 }
 .jumbotron {
-    background-image: url(jumbotron.gif);
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/05/19/30/new-york-924680_640.jpg);
+    width:100%;
+    height: 640px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 150px;
