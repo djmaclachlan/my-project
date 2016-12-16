@@ -60,3 +60,8 @@ footer {
     height: 50px;
     width: 100%;
 }
+.fontAdjust{
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.8em;
+    line-height: 150%;
+}
