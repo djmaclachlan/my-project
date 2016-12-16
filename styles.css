@@ -7,14 +7,11 @@ a
     float: none;
     vertical-align: top;
     font-size: 1.3em;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
-}
-.navbar-brand{
-    border-right: black solid 1px;
-
 }
 .carousel-inner{
     background-color: white;
