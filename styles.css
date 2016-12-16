@@ -63,7 +63,16 @@ footer {
 }
 .media{
     margin: 20px;
+}
+.media-heading{
+
     font-family: 'Cormorant Infant', serif;
     font-size: 2.0em;
+    line-height: 150%;
+}
+.media-body p{
+
+    font-family: 'Cormorant Infant', serif;
+    font-size: 1.6em;
     line-height: 150%;
 }
