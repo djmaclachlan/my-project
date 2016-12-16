@@ -4,8 +4,6 @@ html, body{
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
-    vertical-align: top;
-    font-size: 1.3em;
     font-family: 'Gloria Hallelujah', cursive;
 }
 
