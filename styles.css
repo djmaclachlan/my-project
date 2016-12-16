@@ -41,7 +41,7 @@ footer {
 }
 
 .carousel-caption{
-    top: 100px;
+    margin-top: -150px;
 }
 .rightcol{
     border-left: black 5px;
