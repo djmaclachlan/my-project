@@ -12,6 +12,10 @@ a
 .navbar .navbar-collapse {
     text-align: center;
 }
+.navbar-brand{
+    border-right: black solid 1px;
+
+}
 .carousel-inner{
     background-color: white;
 }
@@ -35,6 +39,9 @@ footer {
     background-image: url(https://cdn.pixabay.com/photo/2015/09/05/19/30/new-york-924680_640.jpg);
     width:100%;
     height: 640px;
+    opacity: .7;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 150px;
