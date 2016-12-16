@@ -64,4 +64,6 @@ footer {
 .media{
     margin: 20px;
     font-family: 'Cormorant Infant', serif;
+    font-size: 2.0em;
+    line-height: 150%;
 }
