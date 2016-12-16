@@ -9,6 +9,7 @@ html, body{
 
 .navbar .navbar-collapse {
     text-align: center;
+    background-color: white;
 }
 .carousel-inner{
     background-color: white;
