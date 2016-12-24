@@ -1,30 +1,11 @@
-h1{
-    text-align:center;
-    font-size:50px;
-    margin-bottom:25px;
-    font-family: 'Baloo Thambi', cursive;
-    background-color:white;
-}
-#app{
-    border: 5px solid black;
-    border-radius: 12px;
-    background-color:gray;
-    color: black;
-    font-family: 'Baloo Thambi', cursive;
-}
-.redLight{
-    background-image: url('http://i.imgur.com/yx50eCM.png');
-    background-repeat: no-repeat;
-}
-.greenLight{
-    background-image: url('http://i.imgur.com/mm6g63c.png');
-    background-repeat: no-repeat;
-}
-#placeholder{
-    height:450px;
-    width: 100%;
-    background-color:white;
-}
-img{
-    width:100%;
-}
+.panel {  margin-top: 10px;  border: 3px solid silver;  border-style: groove;}
+.panel-heading {  text-align: center;}
+#containerPadding {  padding: 20px;}
+h1 {  text-align: center;  font-size: 50px;  margin-bottom: 25px;  font-family: 'Baloo Thambi', cursive;  background-color: white;}
+#app {  border: 5px solid black;  border-radius: 12px;  background-color: gray;  color: black;  font-family: 'Baloo Thambi', cursive;  height: 50%;  padding: 20px;  border-style: groove;}
+.redLight {  background-image: url('http://www.clker.com/cliparts/1/f/a/2/11949849771043985234traffic_light_red_dan_ge_01.svg');  background-repeat: no-repeat;  background-size: contain;}
+.greenLight {  background-image: url('http://www.clker.com/cliparts/6/e/9/d/11949849761176136192traffic_light_green_dan__01.svg');  background-repeat: no-repeat;  background-size: contain;}
+.yellowLight {  background-image: url('http://www.clker.com/cliparts/8/1/7/4/11949849782053089133traffic_light_yellow_dan_01.svg.hi.png');  background-repeat: no-repeat;  background-size: contain;}
+#placeholder {  border: 2px solid silver;  height: 300px;  width: 100%;  background-color: white;  border-style: groove;}
+#map {  width: 100%;  border: 2px solid silver;  border-style: groove;}
+#jumbrotronImage {  background-image: url('http://www.annualreports.com/HostedData/CompanyHeader/NYSE_SPH.png');  background-size: contain;}
