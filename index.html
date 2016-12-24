@@ -1,128 +1,32 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
 
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-     <meta name="description" content="Advertising agency based in New York, New York">
-
-    <meta name="keywords" content="Advertising, Agency, MacLachlan, New York">
-    <!-- Meta data taken from previous action telephone site -->
-
-    <meta name="author" content="Daniel MacLachlan">
-
-    <title>Midweek Productions</title>
-
-    　
-
     <!-- Bootstrap and jquery hardlinks -->
-
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-    　
-
+    <link rel="stylesheet" href="appstyle.css">
+    <!-- End reference block -->
+    <meta charset="UTF-8">
+    <title>Suburban Office App</title>
 </head>
-
 <body>
+<div id="app">
+    <h1 class="title">
+        Today At Suburban
+    </h1>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-
-    <div class="container-fluid">
-
-        <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-            </button>
-
-            <a class="navbar-brand" href="index.html">Midweek Productions</a>
+    <div class="stopLight">
+        <div class="btn-group btn-group-justified">
+        <button type="button" id="red" class="btn btn-primary">Red Light</button>
+        <button type="button" id="yellow" class="btn btn-primary">Yellow Light</button>
+        <button type="button" id="green" class="btn btn-primary">Green Light</button>
+        </div>
+        <div id="placeholder">
 
         </div>
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-
-            <ul class="nav navbar-nav">
-
-                <li class="active"><a href="index.html">Home</a></li>
-
-                <li><a href="portfolio.html">Portfolio</a></li>
-
-                <li><a href="aboutus.html">About Us</a></li>
-
-                <li><a href="contact.html">Contact Us</a></li>
-
-            </ul>
-
-        </div>
-
     </div>
-
-</nav>
-
-    <!-- Begin Review Carousel Block -->
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-
-            <div class="item active">
-                <iframe width="100%" height="750" src="https://www.youtube.com/embed/KJmIXfDEEFg?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                <div class="carousel-caption">
-                    <h3>Sample Caption</h3>
-                </div>
-            </div>
-
-            <div class="item">
-                <iframe width="100%" height="750" src="https://www.youtube.com/embed/RBSLlTEfNpw" frameborder="0" allowfullscreen></iframe>
-                <div class="carousel-caption">
-                    <h3>Sample Caption</h3>
-                </div>
-            </div>
-
-            <div class="item">
-                <iframe width="100%" height="750" src="https://www.youtube.com/embed/GukXIMDO1Zk" frameborder="0" allowfullscreen></iframe>
-                <div class="carousel-caption">
-                    <h3>Sample Caption</h3>
-                </div>
-            </div>
-
-        </div>
-        </div>
-    <!-- End Review Carousel Block -->
-<div class="push"><!-- Placeholder div for space seperation --></div>
-<footer class ="footer">
-    <p class="text-muted">Call us today: (555)555-5555 E-Mail us: <a href="mailto:m.maclachlan@gmail.com">Michelle MacLachlan</a> &copy Copyright 2016 Midweek Productions.  All rights reserved.</p>
-
-</footer>
+</div>
 </body>
-
 </html>
-
-　
