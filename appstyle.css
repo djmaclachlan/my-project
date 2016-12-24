@@ -31,7 +31,7 @@ h3{
     border-style:groove;
     border-width: 3px;
     border-radius: 12px;
-    width:300px;
+    width:320px;
     background-color:white;
     height:450px;
     background-repeat: no-repeat;
@@ -52,4 +52,8 @@ h3{
 #placeholder{
     height:100%;
     width: 100%;
+}
+#map{
+    position: relative;
+    float:right;
 }

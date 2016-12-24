@@ -14,4 +14,5 @@ $(document).ready(function(){
         $("#placeholder").removeClass("greenLight");
         $("#placeholder").addClass("yellowLight");
     });
-});
+
+    });
