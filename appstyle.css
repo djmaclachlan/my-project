@@ -24,6 +24,9 @@ h3{
     background-color:silver;
     height:50px;
 }
+.firstLayer{
+    position:absolute;
+}
 .stopLight{
     margin-left: 20px;
     color:black;
@@ -35,6 +38,7 @@ h3{
     background-color:white;
     height:500px;
     background-repeat: no-repeat;
+    float:left
 
 }
 .redLight{
@@ -54,6 +58,7 @@ h3{
     width: 100%;
 }
 #map{
+    position:absolute;
     width:40%;
-    float:right;
+    float:left;
 }
