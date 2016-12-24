@@ -31,7 +31,7 @@ h3{
     border-style:groove;
     border-width: 3px;
     border-radius: 12px;
-    width:350px;
+    width:20%;
     background-color:white;
     height:500px;
     background-repeat: no-repeat;
@@ -54,6 +54,5 @@ h3{
     width: 100%;
 }
 #map{
-    position: relative;
-    float:right;
+    width:40%;
 }
