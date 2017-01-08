@@ -1,1 +1,128 @@
-<!doctype html><html><head><meta charset="utf-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1">      <meta name="description" content="Action Telephone Exchange is a 24 hour answering service based in Rochester, NY."><meta name="keywords" content="Call Center, Answering Service, Rochester, New York, NY, Voice Mail, Order Entry, Telephone"><!-- Meta data taken from previous action telephone site -->    <meta name="author" content="Daniel MacLachlan">    <meta name="google-site-verification" content="qKvKpF_wQRok7HqCPH-4FxV2UOxrgbL3hzohpWWGBPk" /> <!-- meta tag added to link to google on 7/7/16-->    <title>Action Telephone</title><!-- Bootstrap and jquery hardlinks -->  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  <!-- End reference block -->    <!-- Bootstrap elements override Footer overwrite --><style>.panel {  margin-top: 10px;  border: 3px solid silver;  border-style: groove;}.panel-heading {  text-align: center;}#containerPadding {  padding: 20px;}h1 {  text-align: center;  font-size: 50px;  margin-bottom: 25px;  font-family: 'Baloo Thambi', cursive;  background-color: white;}#app {  border: 5px solid black;  border-radius: 12px;  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */  background: #b5bdc8;  /* Old browsers */  background: -moz-linear-gradient(45deg, #b5bdc8 0%, #828c95 36%, #28343b 100%);  /* FF3.6-15 */  background: -webkit-linear-gradient(45deg, #b5bdc8 0%, #828c95 36%, #28343b 100%);  /* Chrome10-25,Safari5.1-6 */  background: linear-gradient(45deg, #b5bdc8 0%, #828c95 36%, #28343b 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=1);  /* IE6-9 fallback on horizontal gradient */  color: black;  font-family: 'Baloo Thambi', cursive;  height: 50%;  padding: 20px;  border-style: groove;}.redLight {  background-image: url('http://www.clker.com/cliparts/1/f/a/2/11949849771043985234traffic_light_red_dan_ge_01.svg');  background-repeat: no-repeat;  background-size: contain;}.greenLight {  background-image: url('http://www.clker.com/cliparts/6/e/9/d/11949849761176136192traffic_light_green_dan__01.svg');  background-repeat: no-repeat;  background-size: contain;}.yellowLight {  background-image: url('http://www.clker.com/cliparts/8/1/7/4/11949849782053089133traffic_light_yellow_dan_01.svg.hi.png');  background-repeat: no-repeat;  background-size: contain;}#placeholder {  border: 2px solid silver;  height: 300px;  width: 100%;  background-color: white;  border-style: groove;}#map {  width: 100%;  border: 2px solid silver;  border-style: groove;}#jumbrotronImage {  background-image: url('http://www.annualreports.com/HostedData/CompanyHeader/NYSE_SPH.png');  background-repeat: no-repeat;  background-size: 100% 100%;  width: 100%;}textarea {  width: 100%;  margin-top: 25px;  height: 200px;  font-size: 1.5em;  text-align: center;}</style></head><body><div class="jumbotron" id="jumbrotronImage">  <h1>Today At Suburban</h1></div><div class="container" id="containerPadding">  <div>  </div>  <div class="row" id="app">    <div class="col-sm-4">      <div class="btn-group btn-group-justified">        <button type="button" id="red" class="btn btn-primary">Red</button>        <button type="button" id="yellow" class="btn btn-primary">Yellow</button>        <button type="button" id="green" class="btn btn-primary">Green</button>      </div>      <div id="placeholder">      </div>      <form>        <textarea name='textarea'>Add any custom notes here.</textarea>      </form>    </div>    <div class="col-sm-8">      <img id="map" src="https://dsx.weather.com/util/image/map/us_radar_plus_usen_1280x720.jpg?v=ap&w=1280&h=720&api=7db9fe61-7414-47b5-9871-e17d87b8b6a0">      <div class="panel panel-primary">        <div class="panel-heading">          <h4>      Open Customer Contacts                            </h4>        </div>        <div class="panel-body">          <h5>        Total Open Contacts: 0                         </h5>          <h5>        Oldest Open Contact: 0 minutes                       </h5>        </div>      </div>      <div class="panel panel-danger">        <div class="panel-heading">          <h4>      Hazardous Situations                         </h4>        </div>        <div class="panel-body">          <h5>                                 Oldest Hazardous Situation: 0:00 minutes                        </h5>        </div>      </div>    </div>  </div></div></body<script>$(document).ready(function() {  $("#red").click(function() {    $("#placeholder").removeClass("yellowLight");    $("#placeholder").removeClass("greenLight");    $("#placeholder").addClass("redLight");  });  $("#green").click(function() {    $("#placeholder").removeClass("redLight");    $("#placeholder").removeClass("yellowLight");    $("#placeholder").addClass("greenLight");  });  $("#yellow").click(function() {    $("#placeholder").removeClass("redLight");    $("#placeholder").removeClass("greenLight");    $("#placeholder").addClass("yellowLight");  });});</script></html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <meta name="description" content="Advertising agency based in New York, New York">
+
+    <meta name="keywords" content="Advertising, Agency, MacLachlan, New York">
+    <!-- Meta data taken from previous action telephone site -->
+
+    <meta name="author" content="Daniel MacLachlan">
+
+    <title>Midweek Productions</title>
+
+    　
+
+    <!-- Bootstrap and jquery hardlinks -->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    　
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="index.html">Midweek Productions</a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav">
+
+                <li class="active"><a href="index.html">Home</a></li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+                <li><a href="aboutus.html">About Us</a></li>
+
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+    <!-- Begin Review Carousel Block -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <iframe width="100%" height="750" src="https://www.youtube.com/embed/KJmIXfDEEFg?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                <div class="carousel-caption">
+                    <h3>Sample Caption</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <iframe width="100%" height="750" src="https://www.youtube.com/embed/RBSLlTEfNpw" frameborder="0" allowfullscreen></iframe>
+                <div class="carousel-caption">
+                    <h3>Sample Caption</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <iframe width="100%" height="750" src="https://www.youtube.com/embed/GukXIMDO1Zk" frameborder="0" allowfullscreen></iframe>
+                <div class="carousel-caption">
+                    <h3>Sample Caption</h3>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    <!-- End Review Carousel Block -->
+<div class="push"><!-- Placeholder div for space seperation --></div>
+<footer class ="footer">
+    <p class="text-muted">Call us today: (555)555-5555 E-Mail us: <a href="mailto:m.maclachlan@gmail.com">Michelle MacLachlan</a> &copy Copyright 2016 Midweek Productions.  All rights reserved.</p>
+
+</footer>
+</body>
+
+</html>
+
+　
