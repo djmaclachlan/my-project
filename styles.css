@@ -9,7 +9,7 @@ html, body{
 
 .navbar .navbar-collapse {
     text-align: center;
-    background-color: white;
+    background-color: slategray;
 }
 .carousel-inner{
     background-color: white;
@@ -31,7 +31,7 @@ footer {
     margin-bottom:100px;
 }
 .jumbotron {
-    background-image: url(https://pixabay.com/get/e037b50920f41c22d2524518a33219c8b66ae3d111b0194491f3c371/new-york-924680_1280.jpg);
+    background-image: /images/jumbotron.jpg;
     width:100%;
     height: 640px;
     opacity: .7;
@@ -80,7 +80,4 @@ footer {
 .modal-body img{
     width:100%;
     height:50%;
-}
-.imgReplace{
-    background-image: url(http://www.microio.pt/wp-content/uploads/2014/07/Actor_cortado.jpg);
 }
