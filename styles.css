@@ -64,4 +64,11 @@ footer {
 }
 #portfolio{
     background-color: #032422;
+
+}
+#portfolio p{
+    color:white;
+}
+#portfolio li{
+    color: #B9EBE8;
 }
