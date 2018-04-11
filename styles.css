@@ -45,7 +45,7 @@ footer {
     margin-top: -150px;
 }
 .rightcol{
-    border-left: black 5px;
+    align: left;
 }
 .page-header{
     text-align:center;
