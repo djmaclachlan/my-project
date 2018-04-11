@@ -58,6 +58,7 @@ footer {
     font-family: 'Cormorant Infant', serif;
     font-size: 1.8em;
     line-height: 150%;
+    color:white;
 }
 .page-header{
     margin-top: 25px;
@@ -66,8 +67,8 @@ footer {
     background-color: #032422;
 
 }
-.whiteText{
-    color:white;
+.fontAdjust li{
+    font-size: 1.1em;
 }
 .babyBlueText{
     color: #B9EBE8;
