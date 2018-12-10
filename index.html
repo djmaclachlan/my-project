@@ -1,0 +1,116 @@
+<!--
+  Assignment: Create Your bscacad3.buffalostate Web Page
+  Author: Daniel MacLachlan
+  Date: 8/9/18
+  Editor: PHP Storm
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal page for Daniel MacLachlan's CIS 475 Portfolio">
+    <meta name="keywords" content="Daniel, MacLachlan, Buffalo State, CIS">
+    <meta name="author" content="Daniel MacLachlan">
+    <title>Daniel MacLachlan's Web Portfolio</title>
+
+    <!-- Bootstrap and jquery hardlinks -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <!-- End reference block -->
+
+</head>
+
+<body>
+<!-- Bootstrap Nav Block with size responsive menu -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Daniel MacLachlan</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href='#assignments'>Assignments</a></li>
+                <li><a href='#me'>About Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<!-- End Bootstrap Nav Block with size responsive menu -->
+
+<div class="container"> <!-- Begin Container Division Element -->
+    <!-- Header block with Jumbotron -->
+    <div id='me'>
+        <div class="jumbotron">
+            <h1>Daniel MacLachlan</h1>
+            <div class='row'>
+                <div class="col-sm-6">
+                    <p>Hello, my name is Daniel MacLachlan and welcome to my web portfolio. I am a senior at Buffalo State College and
+                        an aspiring web developer. I have done freelance work in the past and have learned quite a lot over the years.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img id='imageFit' src='http://www.cameraegg.org/wp-content/uploads/2013/03/Canon-EOS-100D-Rebel-SL1-Sample-Image-1024x682.jpg' alt="A Toucan">
+                    <br>
+                    <p>This site was built on the bootstrap 3 framework, it is completely mobile responsive and will adapt to screen size. Pretty Cool!
+                </div>
+            </div>
+        </div><!--end jumbotron div -->
+
+        <div class="row">
+            <div id="verticalExtend" class="col-sm-4">
+                <div class="well well-lg">
+                    <h4>The following are programming languages I am familiar with<br /> <span id="largeGlyphicon" class="glyphicon glyphicon-check"></span></h4>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <ol class="list-group">
+                    <li class="list-group-item">C++</li>
+                    <li class="list-group-item">HTML 5</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item">Javascript</li>
+                    <li class="list-group-item">MySQL</li>
+                    <li class="list-group-item">OracleDB</li>
+
+                </ol>
+            </div><!--end col-sm-4 -->
+        </div> <!-- end row div-->
+    </div> <!--end me div -->
+
+    <div id="assignments">
+        <div class="jumbotron">
+            <h1>Assignments for CIS 475</h1>
+            <div class="btn-group btn-group-justified">
+                <a onclick="september()" class="btn btn-primary">September</a>
+                <a onclick="october()" class="btn btn-primary">October</a>
+                <a onclick="november()" class="btn btn-primary">November</a>
+                <a onclick="december()" class="btn btn-primary">December</a>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p id="assign1"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- ***************End Container Division Element***************** -->
+<!-- Sticky Footer Block -->
+<footer class ="footer">
+    <p class="text-muted">Contact me - Phone: 315-283-8589 E-Mail me: <a href="mailto:macldj18@mail.buffalostate.edu">Daniel MacLachlan</a></p>
+</footer>
+<!-- End footer block -->
+</body>
+</html>

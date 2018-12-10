@@ -1,0 +1,42 @@
+/*
+  Assignment: Create Your bscacad3.buffalostate Web Page
+  Author: Daniel MacLachlan
+  Date: 8/11/18
+  Editor: PHP Storm
+*/
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+body{
+    background: linear-gradient(black, white);
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: white;
+    padding: 25px;
+}
+#largeGlyphicon{
+    font-size: 6em;
+}
+#imageFit{
+    width: 100%;
+    height: 100%;
+}
+#me{
+    padding-bottom: 300px;
+}
+#assignments{
+    padding-bottom: 300px;
+}
+#assign1{
+    text-align:center;
+    border: thick solid #1F5FF2;
+    background-color: #1F5FF2;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px/30px;
+}
